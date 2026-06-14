@@ -1,0 +1,1 @@
+[{"uid":"bd4e9040868daf04","name":"ATC_012_Apply_invalid_coupon","time":{"start":1781469347788,"stop":1781469354647,"duration":6859},"status":"passed","severity":"normal"},{"uid":"336a74fce0a4097f","name":"ATC_011_Apply_valid_coupon","time":{"start":1781469308676,"stop":1781469308696,"duration":20},"status":"skipped","severity":"normal"}]

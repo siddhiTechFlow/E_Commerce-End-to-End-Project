@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Blocked because valid coupon code is not available in Demo Web Shop","20","ATC_011_Apply_valid_coupon","Surefire suite","2026-06-15","skipped","2026-06-15","org.tests.qa.CouponTest","Surefire test","org.tests.qa.CouponTest","ATC_011_Apply_valid_coupon"
+"Apply invalid coupon and verify error message","6859","ATC_012_Apply_invalid_coupon","Surefire suite","2026-06-15","passed","2026-06-15","org.tests.qa.CouponTest","Surefire test","org.tests.qa.CouponTest","ATC_012_Apply_invalid_coupon"

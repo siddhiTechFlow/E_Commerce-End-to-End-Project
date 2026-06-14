@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="192.376" tests="28" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Eclipse Automation Workspace\DemoWebShop_AutomationTesting\target\test-classes;D:\Eclipse Automation Workspace\DemoWebShop_AutomationTesting\target\classes;C:\Users\Siddhi\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.44.0\selenium-java-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-api\4.44.0\selenium-api-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.44.0\selenium-chrome-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.44.0\selenium-chromium-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-json\4.44.0\selenium-json-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.44.0\selenium-manager-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v146\4.44.0\selenium-devtools-v146-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v147\4.44.0\selenium-devtools-v147-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v148\4.44.0\selenium-devtools-v148-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.44.0\selenium-edge-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.44.0\selenium-firefox-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-http\4.44.0\selenium-http-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.44.0\selenium-ie-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.44.0\selenium-remote-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\Siddhi\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Siddhi\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Siddhi\.m2\repository\com\google\errorprone\error_prone_annotations\2.47.0\error_prone_annotations-2.47.0.jar;C:\Users\Siddhi\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-api\1.62.0\opentelemetry-api-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-context\1.62.0\opentelemetry-context-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-common\1.62.0\opentelemetry-common-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.62.0\opentelemetry-exporter-logging-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.62.0\opentelemetry-sdk-common-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.62.0\opentelemetry-sdk-extension-autoconfigure-spi-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.62.0\opentelemetry-sdk-extension-autoconfigure-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.62.0\opentelemetry-sdk-trace-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.62.0\opentelemetry-sdk-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.62.0\opentelemetry-sdk-metrics-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.62.0\opentelemetry-sdk-logs-1.62.0.jar;C:\Users\Siddhi\.m2\repository\net\bytebuddy\byte-buddy\1.18.8-jdk5\byte-buddy-1.18.8-jdk5.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-os\4.44.0\selenium-os-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.44.0\selenium-safari-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-support\4.44.0\selenium-support-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Siddhi\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Siddhi\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Siddhi\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Siddhi\.m2\repository\io\qameta\allure\allure-testng\2.35.2\allure-testng-2.35.2.jar;C:\Users\Siddhi\.m2\repository\io\qameta\allure\allure-java-commons\2.35.2\allure-java-commons-2.35.2.jar;C:\Users\Siddhi\.m2\repository\io\qameta\allure\allure-model\2.35.2\allure-model-2.35.2.jar;C:\Users\Siddhi\.m2\repository\io\qameta\allure\allure-test-filter\2.35.2\allure-test-filter-2.35.2.jar;C:\Users\Siddhi\.m2\repository\org\postgresql\postgresql\42.7.11\postgresql-42.7.11.jar;C:\Users\Siddhi\.m2\repository\org\apache\poi\poi\5.5.1\poi-5.5.1.jar;C:\Users\Siddhi\.m2\repository\commons-codec\commons-codec\1.20.0\commons-codec-1.20.0.jar;C:\Users\Siddhi\.m2\repository\org\apache\commons\commons-collections4\4.5.0\commons-collections4-4.5.0.jar;C:\Users\Siddhi\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Siddhi\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Siddhi\.m2\repository\org\apache\poi\poi-ooxml\5.5.1\poi-ooxml-5.5.1.jar;C:\Users\Siddhi\.m2\repository\org\apache\poi\poi-ooxml-lite\5.5.1\poi-ooxml-lite-5.5.1.jar;C:\Users\Siddhi\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\Siddhi\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\Siddhi\.m2\repository\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar;C:\Users\Siddhi\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Siddhi\.m2\repository\org\apache\poi\poi-scratchpad\5.5.1\poi-scratchpad-5.5.1.jar;C:\Users\Siddhi\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Siddhi\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\Siddhi\.m2\repository\org\apache\logging\log4j\log4j-slf4j2-impl\2.20.0\log4j-slf4j2-impl-2.20.0.jar;C:\Users\Siddhi\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\Siddhi\.m2\repository\commons-io\commons-io\2.22.0\commons-io-2.22.0.jar;C:\Users\Siddhi\.m2\repository\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21.0.10\bin"/>
+    <property name="sun.java.command" value="C:\Users\Siddhi\AppData\Local\Temp\surefire13614342861646313913\surefirebooter-20260615024007217_3.jar C:\Users\Siddhi\AppData\Local\Temp\surefire13614342861646313913 2026-06-15T02-40-07_132-jvmRun1 surefire-20260615024007217_1tmp surefire_0-20260615024007217_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Eclipse Automation Workspace\DemoWebShop_AutomationTesting\target\test-classes;D:\Eclipse Automation Workspace\DemoWebShop_AutomationTesting\target\classes;C:\Users\Siddhi\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.44.0\selenium-java-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-api\4.44.0\selenium-api-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.44.0\selenium-chrome-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.44.0\selenium-chromium-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-json\4.44.0\selenium-json-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.44.0\selenium-manager-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v146\4.44.0\selenium-devtools-v146-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v147\4.44.0\selenium-devtools-v147-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v148\4.44.0\selenium-devtools-v148-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.44.0\selenium-edge-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.44.0\selenium-firefox-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-http\4.44.0\selenium-http-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.44.0\selenium-ie-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.44.0\selenium-remote-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\Siddhi\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Siddhi\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Siddhi\.m2\repository\com\google\errorprone\error_prone_annotations\2.47.0\error_prone_annotations-2.47.0.jar;C:\Users\Siddhi\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-api\1.62.0\opentelemetry-api-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-context\1.62.0\opentelemetry-context-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-common\1.62.0\opentelemetry-common-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.62.0\opentelemetry-exporter-logging-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.62.0\opentelemetry-sdk-common-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.62.0\opentelemetry-sdk-extension-autoconfigure-spi-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.62.0\opentelemetry-sdk-extension-autoconfigure-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.62.0\opentelemetry-sdk-trace-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.62.0\opentelemetry-sdk-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.62.0\opentelemetry-sdk-metrics-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.62.0\opentelemetry-sdk-logs-1.62.0.jar;C:\Users\Siddhi\.m2\repository\net\bytebuddy\byte-buddy\1.18.8-jdk5\byte-buddy-1.18.8-jdk5.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-os\4.44.0\selenium-os-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.44.0\selenium-safari-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-support\4.44.0\selenium-support-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Siddhi\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Siddhi\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Siddhi\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Siddhi\.m2\repository\io\qameta\allure\allure-testng\2.35.2\allure-testng-2.35.2.jar;C:\Users\Siddhi\.m2\repository\io\qameta\allure\allure-java-commons\2.35.2\allure-java-commons-2.35.2.jar;C:\Users\Siddhi\.m2\repository\io\qameta\allure\allure-model\2.35.2\allure-model-2.35.2.jar;C:\Users\Siddhi\.m2\repository\io\qameta\allure\allure-test-filter\2.35.2\allure-test-filter-2.35.2.jar;C:\Users\Siddhi\.m2\repository\org\postgresql\postgresql\42.7.11\postgresql-42.7.11.jar;C:\Users\Siddhi\.m2\repository\org\apache\poi\poi\5.5.1\poi-5.5.1.jar;C:\Users\Siddhi\.m2\repository\commons-codec\commons-codec\1.20.0\commons-codec-1.20.0.jar;C:\Users\Siddhi\.m2\repository\org\apache\commons\commons-collections4\4.5.0\commons-collections4-4.5.0.jar;C:\Users\Siddhi\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Siddhi\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Siddhi\.m2\repository\org\apache\poi\poi-ooxml\5.5.1\poi-ooxml-5.5.1.jar;C:\Users\Siddhi\.m2\repository\org\apache\poi\poi-ooxml-lite\5.5.1\poi-ooxml-lite-5.5.1.jar;C:\Users\Siddhi\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\Siddhi\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\Siddhi\.m2\repository\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar;C:\Users\Siddhi\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Siddhi\.m2\repository\org\apache\poi\poi-scratchpad\5.5.1\poi-scratchpad-5.5.1.jar;C:\Users\Siddhi\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Siddhi\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\Siddhi\.m2\repository\org\apache\logging\log4j\log4j-slf4j2-impl\2.20.0\log4j-slf4j2-impl-2.20.0.jar;C:\Users\Siddhi\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\Siddhi\.m2\repository\commons-io\commons-io\2.22.0\commons-io-2.22.0.jar;C:\Users\Siddhi\.m2\repository\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Siddhi"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21.0.10"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Eclipse Automation Workspace\DemoWebShop_AutomationTesting"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Siddhi\AppData\Local\Temp\surefire13614342861646313913\surefirebooter-20260615024007217_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.10+8-LTS-217"/>
+    <property name="user.name" value="Siddhi"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Siddhi\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Siddhi\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.10"/>
+    <property name="user.dir" value="D:\Eclipse Automation Workspace\DemoWebShop_AutomationTesting"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21.0.10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python314\Scripts\;C:\Python314\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files\dotnet\;C:\Program Files\Maven\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;D:\AllureReport\Allure\allure-2.42.1\bin;C:\Users\Siddhi\AppData\Local\Microsoft\WindowsApps;C:\Users\Siddhi\AppData\Local\GitHubDesktop\bin;C:\Users\Siddhi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Siddhi\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.10+8-LTS-217"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="ATC_001_Verify_user_registration_with_valid_data" classname="org.tests.qa.RegisterTest" time="2.41">
+    <system-out><![CDATA[2026-06-15 02:40:08 [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [D:\Eclipse Automation Workspace\DemoWebShop_AutomationTesting\testng.xml] otherwise TestNG may fail or not work as expected.
+2026-06-15 02:40:09 [main] INFO  org.utilities.qa.Log - Start Test for Registration
+2026-06-15 02:40:13 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:40:14 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:40:14 [main] INFO  org.utilities.qa.Log - Executing ATC_001 : Verify user registration with valid data
+2026-06-15 02:40:16 [main] INFO  org.utilities.qa.Log - Success Registration message :Your registration completed
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:40:10 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_015_Verify_user_registration_with_empty_fields" classname="org.tests.qa.RegisterTest" time="0.838">
+    <system-out><![CDATA[2026-06-15 02:40:16 [main] INFO  org.utilities.qa.Log - End the test
+2026-06-15 02:40:16 [main] INFO  org.utilities.qa.Log - Database connection closed.
+2026-06-15 02:40:17 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:40:17 [main] INFO  org.utilities.qa.Log - Start Test for Registration
+2026-06-15 02:40:21 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:40:21 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:40:21 [main] INFO  org.utilities.qa.Log - Executing ATC_015 : Verify user registration with empty fields
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:40:18 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_002_Verify_login_with_valid_credentials" classname="org.tests.qa.LoginTest" time="1.51">
+    <system-out><![CDATA[2026-06-15 02:40:22 [main] INFO  org.utilities.qa.Log - End the test
+2026-06-15 02:40:22 [main] INFO  org.utilities.qa.Log - Database connection closed.
+2026-06-15 02:40:22 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:40:22 [main] INFO  org.utilities.qa.Log - Start Test for Login
+2026-06-15 02:40:26 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:40:26 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:40:26 [main] INFO  org.utilities.qa.Log - Executing ATC_002 : Login with valid credentials
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:40:24 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_003_Verify_login_with_invalid_password" classname="org.tests.qa.LoginTest" time="1.16">
+    <system-out><![CDATA[2026-06-15 02:40:28 [main] INFO  org.utilities.qa.Log - Login test ended
+2026-06-15 02:40:28 [main] INFO  org.utilities.qa.Log - Database connection closed.
+2026-06-15 02:40:28 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:40:28 [main] INFO  org.utilities.qa.Log - Start Test for Login
+2026-06-15 02:40:31 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:40:31 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:40:31 [main] INFO  org.utilities.qa.Log - Executing ATC_003 : Verify login with invalid password
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:40:29 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_016_Verify_logout_function" classname="org.tests.qa.LoginTest" time="2.187">
+    <system-out><![CDATA[2026-06-15 02:40:33 [main] INFO  org.utilities.qa.Log - Login test ended
+2026-06-15 02:40:33 [main] INFO  org.utilities.qa.Log - Database connection closed.
+2026-06-15 02:40:33 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:40:33 [main] INFO  org.utilities.qa.Log - Start Test for Login
+2026-06-15 02:40:36 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:40:37 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:40:37 [main] INFO  org.utilities.qa.Log - Executing ATC_016 : Verify the logout functionality
+2026-06-15 02:40:39 [main] INFO  org.utilities.qa.Log - Application logout completed
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:40:34 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_004_Verify_product_with_valid_keyword[jeans](1)" classname="org.tests.qa.SearchProductTest" time="1.197">
+    <system-out><![CDATA[2026-06-15 02:40:39 [main] INFO  org.utilities.qa.Log - Login test ended
+2026-06-15 02:40:39 [main] INFO  org.utilities.qa.Log - Database connection closed.
+2026-06-15 02:40:39 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:40:39 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:40:39 [main] INFO  org.utilities.qa.Log - Database connection closed.
+2026-06-15 02:40:39 [main] INFO  org.utilities.qa.Log - Start Test for Search Product
+2026-06-15 02:40:43 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:40:43 [main] INFO  org.utilities.qa.Log - Executing AATC_004 - Verify product search with valid keyword :jeans
+2026-06-15 02:40:43 [main] INFO  org.utilities.qa.Log - Searching for the product :jeans
+2026-06-15 02:40:44 [main] INFO  org.utilities.qa.Log - Verifying product display
+2026-06-15 02:40:44 [main] INFO  org.utilities.qa.Log - Valid product search verified successfully for :jeans
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:40:40 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_004_Verify_product_with_valid_keyword[computer](2)" classname="org.tests.qa.SearchProductTest" time="0.886">
+    <system-out><![CDATA[2026-06-15 02:40:44 [main] INFO  org.utilities.qa.Log - Search Product Test Ended
+2026-06-15 02:40:44 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:40:44 [main] INFO  org.utilities.qa.Log - Start Test for Search Product
+2026-06-15 02:40:48 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:40:48 [main] INFO  org.utilities.qa.Log - Executing AATC_004 - Verify product search with valid keyword :computer
+2026-06-15 02:40:48 [main] INFO  org.utilities.qa.Log - Searching for the product :computer
+2026-06-15 02:40:48 [main] INFO  org.utilities.qa.Log - Verifying product display
+2026-06-15 02:40:48 [main] INFO  org.utilities.qa.Log - Valid product search verified successfully for :computer
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:40:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_017_Verify_product_search_with_invalid_keyword[xyzabc](1)" classname="org.tests.qa.SearchProductTest" time="0.988">
+    <system-out><![CDATA[2026-06-15 02:40:48 [main] INFO  org.utilities.qa.Log - Search Product Test Ended
+2026-06-15 02:40:49 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:40:49 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:40:49 [main] INFO  org.utilities.qa.Log - Database connection closed.
+2026-06-15 02:40:49 [main] INFO  org.utilities.qa.Log - Start Test for Search Product
+2026-06-15 02:40:52 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:40:52 [main] INFO  org.utilities.qa.Log - Executing ATC_017 - Verify product search with invalid keyword entered :xyzabc
+2026-06-15 02:40:52 [main] INFO  org.utilities.qa.Log - Searching for the product :xyzabc
+2026-06-15 02:40:53 [main] INFO  org.utilities.qa.Log - Verifying invalid product search message
+2026-06-15 02:40:53 [main] INFO  org.utilities.qa.Log - Validating invalid product search message
+2026-06-15 02:40:53 [main] INFO  org.utilities.qa.Log - Invalid product search message :No products were found that matched your criteria.
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:40:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_017_Verify_product_search_with_invalid_keyword[marketplace](2)" classname="org.tests.qa.SearchProductTest" time="0.869">
+    <system-out><![CDATA[2026-06-15 02:40:53 [main] INFO  org.utilities.qa.Log - Search Product Test Ended
+2026-06-15 02:40:53 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:40:53 [main] INFO  org.utilities.qa.Log - Start Test for Search Product
+2026-06-15 02:40:57 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:40:57 [main] INFO  org.utilities.qa.Log - Executing ATC_017 - Verify product search with invalid keyword entered :marketplace
+2026-06-15 02:40:57 [main] INFO  org.utilities.qa.Log - Searching for the product :marketplace
+2026-06-15 02:40:58 [main] INFO  org.utilities.qa.Log - Verifying invalid product search message
+2026-06-15 02:40:58 [main] INFO  org.utilities.qa.Log - Validating invalid product search message
+2026-06-15 02:40:58 [main] INFO  org.utilities.qa.Log - Invalid product search message :No products were found that matched your criteria.
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:40:54 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_018_Verify_product_details_page[Computing and Internet](1)" classname="org.tests.qa.ProductDetailsTest" time="2.713">
+    <system-out><![CDATA[2026-06-15 02:40:58 [main] INFO  org.utilities.qa.Log - Search Product Test Ended
+2026-06-15 02:40:58 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:40:58 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:40:58 [main] INFO  org.utilities.qa.Log - Database connection closed.
+2026-06-15 02:40:58 [main] INFO  org.utilities.qa.Log - Start Test for Product Details
+2026-06-15 02:41:02 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:41:02 [main] INFO  org.utilities.qa.Log - Executing ATC_018 - Verify the product :Computing and Internet
+2026-06-15 02:41:02 [main] INFO  org.utilities.qa.Log - Searching for the product :Computing and Internet
+2026-06-15 02:41:05 [main] INFO  org.utilities.qa.Log - The product details were successfully verified for :Computing and Internet
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:41:00 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_018_Verify_product_details_page[14.1-inch Laptop](2)" classname="org.tests.qa.ProductDetailsTest" time="2.937">
+    <system-out><![CDATA[2026-06-15 02:41:05 [main] INFO  org.utilities.qa.Log - Product Details Test Ended
+2026-06-15 02:41:05 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:41:05 [main] INFO  org.utilities.qa.Log - Start Test for Product Details
+2026-06-15 02:41:09 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:41:09 [main] INFO  org.utilities.qa.Log - Executing ATC_018 - Verify the product :14.1-inch Laptop
+2026-06-15 02:41:09 [main] INFO  org.utilities.qa.Log - Searching for the product :14.1-inch Laptop
+2026-06-15 02:41:12 [main] INFO  org.utilities.qa.Log - The product details were successfully verified for :14.1-inch Laptop
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:41:06 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_018_Verify_product_details_page[50&apos;s Rockabilly Polka Dot Top JR Plus Size](3)" classname="org.tests.qa.ProductDetailsTest" time="2.65">
+    <system-out><![CDATA[2026-06-15 02:41:12 [main] INFO  org.utilities.qa.Log - Product Details Test Ended
+2026-06-15 02:41:12 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:41:12 [main] INFO  org.utilities.qa.Log - Start Test for Product Details
+2026-06-15 02:41:16 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:41:16 [main] INFO  org.utilities.qa.Log - Executing ATC_018 - Verify the product :50's Rockabilly Polka Dot Top JR Plus Size
+2026-06-15 02:41:16 [main] INFO  org.utilities.qa.Log - Searching for the product :50's Rockabilly Polka Dot Top JR Plus Size
+2026-06-15 02:41:19 [main] INFO  org.utilities.qa.Log - The product details were successfully verified for :50's Rockabilly Polka Dot Top JR Plus Size
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:41:14 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_018_Verify_product_details_page[Diamond Tennis Bracelet](4)" classname="org.tests.qa.ProductDetailsTest" time="2.591">
+    <system-out><![CDATA[2026-06-15 02:41:19 [main] INFO  org.utilities.qa.Log - Product Details Test Ended
+2026-06-15 02:41:19 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:41:19 [main] INFO  org.utilities.qa.Log - Start Test for Product Details
+2026-06-15 02:41:23 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:41:23 [main] INFO  org.utilities.qa.Log - Executing ATC_018 - Verify the product :Diamond Tennis Bracelet
+2026-06-15 02:41:23 [main] INFO  org.utilities.qa.Log - Searching for the product :Diamond Tennis Bracelet
+2026-06-15 02:41:26 [main] INFO  org.utilities.qa.Log - The product details were successfully verified for :Diamond Tennis Bracelet
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:41:20 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_018_Verify_product_details_page[Blue and green Sneaker](5)" classname="org.tests.qa.ProductDetailsTest" time="2.249">
+    <system-out><![CDATA[2026-06-15 02:41:26 [main] INFO  org.utilities.qa.Log - Product Details Test Ended
+2026-06-15 02:41:26 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:41:26 [main] INFO  org.utilities.qa.Log - Start Test for Product Details
+2026-06-15 02:41:30 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:41:30 [main] INFO  org.utilities.qa.Log - Executing ATC_018 - Verify the product :Blue and green Sneaker
+2026-06-15 02:41:30 [main] INFO  org.utilities.qa.Log - Searching for the product :Blue and green Sneaker
+2026-06-15 02:41:32 [main] INFO  org.utilities.qa.Log - The product details were successfully verified for :Blue and green Sneaker
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:41:27 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_018_Verify_product_details_page[Blue Jeans](6)" classname="org.tests.qa.ProductDetailsTest" time="2.437">
+    <system-out><![CDATA[2026-06-15 02:41:32 [main] INFO  org.utilities.qa.Log - Product Details Test Ended
+2026-06-15 02:41:32 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:41:32 [main] INFO  org.utilities.qa.Log - Start Test for Product Details
+2026-06-15 02:41:36 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:41:36 [main] INFO  org.utilities.qa.Log - Executing ATC_018 - Verify the product :Blue Jeans
+2026-06-15 02:41:36 [main] INFO  org.utilities.qa.Log - Searching for the product :Blue Jeans
+2026-06-15 02:41:38 [main] INFO  org.utilities.qa.Log - The product details were successfully verified for :Blue Jeans
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:41:33 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_018_Verify_product_details_page[Denim Short with Rhinestones](7)" classname="org.tests.qa.ProductDetailsTest" time="2.37">
+    <system-out><![CDATA[2026-06-15 02:41:38 [main] INFO  org.utilities.qa.Log - Product Details Test Ended
+2026-06-15 02:41:38 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:41:38 [main] INFO  org.utilities.qa.Log - Start Test for Product Details
+2026-06-15 02:41:42 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:41:42 [main] INFO  org.utilities.qa.Log - Executing ATC_018 - Verify the product :Denim Short with Rhinestones
+2026-06-15 02:41:42 [main] INFO  org.utilities.qa.Log - Searching for the product :Denim Short with Rhinestones
+2026-06-15 02:41:44 [main] INFO  org.utilities.qa.Log - The product details were successfully verified for :Denim Short with Rhinestones
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:41:40 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_006_Add_product_to_the_cart" classname="org.tests.qa.CartTest" time="3.08">
+    <system-out><![CDATA[2026-06-15 02:41:44 [main] INFO  org.utilities.qa.Log - Product Details Test Ended
+2026-06-15 02:41:44 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:41:44 [main] INFO  org.utilities.qa.Log - Start Cart Module Test
+2026-06-15 02:41:48 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:41:48 [main] INFO  org.utilities.qa.Log - Executing ATC_006 - Add a product to the Cart
+2026-06-15 02:41:48 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:41:48 [main] INFO  org.utilities.qa.Log - Database connection closed.
+2026-06-15 02:41:48 [main] INFO  org.utilities.qa.Log - Product is fetched from the database :Computing and Internet
+2026-06-15 02:41:48 [main] INFO  org.utilities.qa.Log - Searching for the product :Computing and Internet
+2026-06-15 02:41:50 [main] INFO  org.utilities.qa.Log - The product is added to cart successfully
+2026-06-15 02:41:51 [main] INFO  org.utilities.qa.Log - Checking if the product is there in the cart
+2026-06-15 02:41:51 [main] INFO  org.utilities.qa.Log - Getting the count of the cart from the header
+2026-06-15 02:41:51 [main] INFO  org.utilities.qa.Log - The cart count after adding the product :(1)
+2026-06-15 02:41:51 [main] INFO  org.utilities.qa.Log - Test ATC_006 passed successfully
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:41:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_007_Update_cart_item_quantity" classname="org.tests.qa.CartTest" time="4.328">
+    <system-out><![CDATA[2026-06-15 02:41:51 [main] INFO  org.utilities.qa.Log - Cart Test Ended
+2026-06-15 02:41:51 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:41:51 [main] INFO  org.utilities.qa.Log - Start Cart Module Test
+2026-06-15 02:41:54 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:41:54 [main] INFO  org.utilities.qa.Log - Executing ATC_007 - Update Cart Quantity and verify updated total
+2026-06-15 02:41:54 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:41:54 [main] INFO  org.utilities.qa.Log - Database connection closed.
+2026-06-15 02:41:54 [main] INFO  org.utilities.qa.Log - Product is fetched from the database :Computing and Internet
+2026-06-15 02:41:54 [main] INFO  org.utilities.qa.Log - Searching for the product :Computing and Internet
+2026-06-15 02:41:57 [main] INFO  org.utilities.qa.Log - The product is added to cart successfully
+2026-06-15 02:41:57 [main] INFO  org.utilities.qa.Log - Getting the sub total of the product from cart
+2026-06-15 02:41:57 [main] INFO  org.utilities.qa.Log - Subtotal before updating the product quantity :10.00
+2026-06-15 02:41:57 [main] INFO  org.utilities.qa.Log - Updating the product quantity
+2026-06-15 02:41:58 [main] INFO  org.utilities.qa.Log - Clicking on the Update Shopping Cart Button
+2026-06-15 02:41:58 [main] INFO  org.utilities.qa.Log - Getting the sub total of the product from cart
+2026-06-15 02:41:59 [main] INFO  org.utilities.qa.Log - Subtotal after updating the product quantity :40.00
+2026-06-15 02:41:59 [main] INFO  org.utilities.qa.Log - Checking if the product is there in the cart
+2026-06-15 02:41:59 [main] INFO  org.utilities.qa.Log - Test STC_007 passed successfully
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:41:52 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_008_Remove_item_from_cart" classname="org.tests.qa.CartTest" time="3.621">
+    <system-out><![CDATA[2026-06-15 02:41:59 [main] INFO  org.utilities.qa.Log - Cart Test Ended
+2026-06-15 02:41:59 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:41:59 [main] INFO  org.utilities.qa.Log - Start Cart Module Test
+2026-06-15 02:42:03 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:42:03 [main] INFO  org.utilities.qa.Log - Executing ATC_008 - Remove item from the cart and verify cart is empty
+2026-06-15 02:42:03 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:42:03 [main] INFO  org.utilities.qa.Log - Database connection closed.
+2026-06-15 02:42:03 [main] INFO  org.utilities.qa.Log - Product is fetched from the database :Computing and Internet
+2026-06-15 02:42:03 [main] INFO  org.utilities.qa.Log - Searching for the product :Computing and Internet
+2026-06-15 02:42:05 [main] INFO  org.utilities.qa.Log - The product is added to cart successfully
+2026-06-15 02:42:06 [main] INFO  org.utilities.qa.Log - Removing the product from the cart by clicking on the checkbox
+2026-06-15 02:42:06 [main] INFO  org.utilities.qa.Log - Clicking on the Update Shopping Cart Button
+2026-06-15 02:42:06 [main] INFO  org.utilities.qa.Log - Checking for the validation message if the cart is empty
+2026-06-15 02:42:06 [main] INFO  org.utilities.qa.Log - Test ATC_008 passed successfullly
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:42:00 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_010_Complete_full_checkout" classname="org.tests.qa.CheckoutTest" time="11.397">
+    <system-out><![CDATA[2026-06-15 02:42:06 [main] INFO  org.utilities.qa.Log - Cart Test Ended
+2026-06-15 02:42:06 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:42:06 [main] INFO  org.utilities.qa.Log - Test started for Checkout Module
+2026-06-15 02:42:10 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:42:10 [main] INFO  org.utilities.qa.Log - Executing ATC_010 - Complete full checkout flow with COD payment
+2026-06-15 02:42:10 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:42:12 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:42:12 [main] INFO  org.utilities.qa.Log - Database connection closed.
+2026-06-15 02:42:12 [main] INFO  org.utilities.qa.Log - Checkout product fetched from the database :Computing and Internet
+2026-06-15 02:42:12 [main] INFO  org.utilities.qa.Log - Searching for the product :Computing and Internet
+2026-06-15 02:42:15 [main] INFO  org.utilities.qa.Log - Checking if the product is there in the cart
+2026-06-15 02:42:15 [main] INFO  org.utilities.qa.Log - Agreeing to the terms and proceeding to checkout
+2026-06-15 02:42:16 [main] INFO  org.utilities.qa.Log - Clicking on the checkout button
+2026-06-15 02:42:17 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:42:17 [main] INFO  org.utilities.qa.Log - Database connection closed.
+2026-06-15 02:42:17 [main] INFO  org.utilities.qa.Log - The existing billing address was found. Selecting existing billing address
+2026-06-15 02:42:17 [main] INFO  org.utilities.qa.Log - Clicking the billilng address continue button
+2026-06-15 02:42:17 [main] INFO  org.utilities.qa.Log - Continuing with the selected shipping address
+2026-06-15 02:42:18 [main] INFO  org.utilities.qa.Log - Selecting the Next Air Day Shipping Method
+2026-06-15 02:42:18 [main] INFO  org.utilities.qa.Log - Clicking on the continue button after selecting the shipping method
+2026-06-15 02:42:18 [main] INFO  org.utilities.qa.Log - Selecting the COD payment method
+2026-06-15 02:42:19 [main] INFO  org.utilities.qa.Log - Clicking on the continue button after selecting the payment method
+2026-06-15 02:42:19 [main] INFO  org.utilities.qa.Log - Continuing the payment information step
+2026-06-15 02:42:20 [main] INFO  org.utilities.qa.Log - Click the confirm order button
+2026-06-15 02:42:20 [main] INFO  org.utilities.qa.Log - Checking for the order success message
+2026-06-15 02:42:21 [main] INFO  org.utilities.qa.Log - Test ACT_010 passed successfully
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:42:08 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_009_Add_product_to_wishlist" classname="org.tests.qa.WishlistTest" time="3.474">
+    <system-out><![CDATA[2026-06-15 02:42:21 [main] INFO  org.utilities.qa.Log - Checkout test ended
+2026-06-15 02:42:22 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:42:22 [main] INFO  org.utilities.qa.Log - Start test for Wishlist module
+2026-06-15 02:42:25 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:42:25 [main] INFO  org.utilities.qa.Log - Executing ATC_009 - Add product to wishlist
+2026-06-15 02:42:25 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:42:25 [main] INFO  org.utilities.qa.Log - Database connection closed.
+2026-06-15 02:42:25 [main] INFO  org.utilities.qa.Log - Searching for the product :Blue and green Sneaker
+2026-06-15 02:42:28 [main] INFO  org.utilities.qa.Log - Getting the count of wishlist
+2026-06-15 02:42:28 [main] INFO  org.utilities.qa.Log - Wishlist count after adding product :(1)
+2026-06-15 02:42:28 [main] INFO  org.utilities.qa.Log - Opening the wishlist page
+2026-06-15 02:42:29 [main] INFO  org.utilities.qa.Log - Checking if the Product is there in the Wishlist
+2026-06-15 02:42:29 [main] INFO  org.utilities.qa.Log - Test ATC_009 passed successfully for :Blue and green Sneaker
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:42:23 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_013_Verify_order_history" classname="org.tests.qa.OrderTest" time="3.152">
+    <system-out><![CDATA[2026-06-15 02:42:29 [main] INFO  org.utilities.qa.Log - Wishlist module test ended
+2026-06-15 02:42:29 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:42:29 [main] INFO  org.utilities.qa.Log - Test started for Order module
+2026-06-15 02:42:34 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:42:34 [main] INFO  org.utilities.qa.Log - Executing ATC_013 - View order history and verify order details
+2026-06-15 02:42:34 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:42:36 [main] INFO  org.utilities.qa.Log - Login completed succesfully
+2026-06-15 02:42:36 [main] INFO  org.utilities.qa.Log - Database connection closed.
+2026-06-15 02:42:36 [main] INFO  org.utilities.qa.Log - Opening My Account
+2026-06-15 02:42:36 [main] INFO  org.utilities.qa.Log - Opening the orders section
+2026-06-15 02:42:36 [main] INFO  org.utilities.qa.Log - Checking if order history is displayed
+2026-06-15 02:42:36 [main] INFO  org.utilities.qa.Log - Checking if at least 1 order is present
+2026-06-15 02:42:36 [main] INFO  org.utilities.qa.Log - Opening the order details page
+2026-06-15 02:42:37 [main] INFO  org.utilities.qa.Log - Checking if the order details page is displayed
+2026-06-15 02:42:37 [main] INFO  org.utilities.qa.Log - Checking for the order No. being displayed
+2026-06-15 02:42:37 [main] INFO  org.utilities.qa.Log - Test ATC_013 passed successfully
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:42:30 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_014_Verify_order_page_navigation" classname="org.tests.qa.OrderTest" time="2.683">
+    <system-out><![CDATA[2026-06-15 02:42:37 [main] INFO  org.utilities.qa.Log - Order page test ended
+2026-06-15 02:42:37 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:42:37 [main] INFO  org.utilities.qa.Log - Test started for Order module
+2026-06-15 02:42:41 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:42:41 [main] INFO  org.utilities.qa.Log - Executing ATC_014 - Verify order page navigation and order visibility
+2026-06-15 02:42:41 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:42:43 [main] INFO  org.utilities.qa.Log - Login completed succesfully
+2026-06-15 02:42:43 [main] INFO  org.utilities.qa.Log - Database connection closed.
+2026-06-15 02:42:43 [main] INFO  org.utilities.qa.Log - Opening My Account
+2026-06-15 02:42:43 [main] INFO  org.utilities.qa.Log - Opening the orders section
+2026-06-15 02:42:44 [main] INFO  org.utilities.qa.Log - Checking if order history is displayed
+2026-06-15 02:42:44 [main] INFO  org.utilities.qa.Log - Checking if at least 1 order is present
+2026-06-15 02:42:44 [main] INFO  org.utilities.qa.Log - Test ATC_014 passed successfully
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:42:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_011_Apply_valid_coupon" classname="org.tests.qa.CouponTest" time="0.0">
+    <skipped message="Blocked : Valid coupon code is not available in Demo Web Shop application"/>
+    <system-out><![CDATA[2026-06-15 02:42:44 [main] INFO  org.utilities.qa.Log - Order page test ended
+2026-06-15 02:42:44 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:42:44 [main] INFO  org.utilities.qa.Log - Test started for Coupon Module
+2026-06-15 02:42:48 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:42:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_012_Apply_invalid_coupon" classname="org.tests.qa.CouponTest" time="4.369">
+    <system-out><![CDATA[2026-06-15 02:42:48 [main] INFO  org.utilities.qa.Log - Test ended for coupon module
+2026-06-15 02:42:48 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:42:48 [main] INFO  org.utilities.qa.Log - Test started for Coupon Module
+2026-06-15 02:42:53 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:42:53 [main] INFO  org.utilities.qa.Log - Executing ATC_012 - Apply invalid coupon and verify error message
+2026-06-15 02:42:53 [main] INFO  org.utilities.qa.Log - Adding product to cart : Blue Jeans
+2026-06-15 02:42:53 [main] INFO  org.utilities.qa.Log - Searching for the product :Blue Jeans
+2026-06-15 02:42:57 [main] INFO  org.utilities.qa.Log - Checking if the product is there in the cart
+2026-06-15 02:42:57 [main] INFO  org.utilities.qa.Log - Entering coupon code :TIRA20BEAUTY
+2026-06-15 02:42:57 [main] INFO  org.utilities.qa.Log - Clicked on Apply coupon button
+2026-06-15 02:42:57 [main] INFO  org.utilities.qa.Log - Checking if the copoun message is displayed
+2026-06-15 02:42:57 [main] INFO  org.utilities.qa.Log - Getting coupon message text
+2026-06-15 02:42:57 [main] INFO  org.utilities.qa.Log - Test ATC_012 passed successfully
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:42:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_019_Verify_compare_product_function" classname="org.tests.qa.CompareProductTest" time="5.617">
+    <system-out><![CDATA[2026-06-15 02:42:57 [main] INFO  org.utilities.qa.Log - Test ended for coupon module
+2026-06-15 02:42:58 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:42:58 [main] INFO  org.utilities.qa.Log - Start test for Compare Product Page
+2026-06-15 02:43:02 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:43:02 [main] INFO  org.utilities.qa.Log - Executing ATC_019 - Verify compare product functionality
+2026-06-15 02:43:02 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:43:02 [main] INFO  org.utilities.qa.Log - Database connection closed.
+2026-06-15 02:43:02 [main] INFO  org.utilities.qa.Log - Product 1 :Blue Jeans
+2026-06-15 02:43:02 [main] INFO  org.utilities.qa.Log - Product 2 :Denim Short with Rhinestones
+2026-06-15 02:43:02 [main] INFO  org.utilities.qa.Log - Searching for the product :Blue Jeans
+2026-06-15 02:43:04 [main] INFO  org.utilities.qa.Log - Blue Jeans was added to compare list
+2026-06-15 02:43:04 [main] INFO  org.utilities.qa.Log - Searching for the product :Denim Short with Rhinestones
+2026-06-15 02:43:07 [main] INFO  org.utilities.qa.Log - Denim Short with Rhinestones was added to compare list
+2026-06-15 02:43:07 [main] INFO  org.utilities.qa.Log - Checking for the compare products page
+2026-06-15 02:43:07 [main] INFO  org.utilities.qa.Log - Getting the page title for the compare product page
+2026-06-15 02:43:07 [main] INFO  org.utilities.qa.Log - Compare products verified successfully
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:42:59 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_005_Verify_prod_sort" classname="org.tests.qa.PriceFilterTest" time="2.601">
+    <system-out><![CDATA[2026-06-15 02:43:07 [main] INFO  org.utilities.qa.Log - Compare Products test ended
+2026-06-15 02:43:08 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:43:08 [main] INFO  org.utilities.qa.Log - Test started for price filter module
+2026-06-15 02:43:11 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:43:11 [main] INFO  org.utilities.qa.Log - Executing ATC_005 - Verify product price sorting
+2026-06-15 02:43:11 [main] INFO  org.utilities.qa.Log - Opening Apparel & Shoes Category
+2026-06-15 02:43:12 [main] INFO  org.utilities.qa.Log - Selecting price Low to High
+2026-06-15 02:43:13 [main] INFO  org.utilities.qa.Log - Getting the price for all products
+2026-06-15 02:43:13 [main] INFO  org.utilities.qa.Log - Prices after Low to High sorting :[1.0, 1.0, 1.0, 10.0, 11.0, 11.0, 15.0, 17.56]
+2026-06-15 02:43:13 [main] INFO  org.utilities.qa.Log - Products are sorted low to high successfully
+2026-06-15 02:43:13 [main] INFO  org.utilities.qa.Log - Selecting price High to Low
+2026-06-15 02:43:14 [main] INFO  org.utilities.qa.Log - Getting the price for all products
+2026-06-15 02:43:14 [main] INFO  org.utilities.qa.Log - Prices after High to Low Sorting :[40.0, 35.0, 30.0, 25.0, 24.0, 17.56, 15.0, 11.0]
+2026-06-15 02:43:14 [main] INFO  org.utilities.qa.Log - test ATC_005 passed successfully
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:43:09 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+  <testcase name="ATC_020_Verify_my_acc_page_navigation" classname="org.tests.qa.MyAccountTest" time="2.147">
+    <system-out><![CDATA[2026-06-15 02:43:14 [main] INFO  org.utilities.qa.Log - Price Filter Test Ended
+2026-06-15 02:43:14 [main] INFO  org.utilities.qa.Log - Browser closed successfully...
+2026-06-15 02:43:14 [main] INFO  org.utilities.qa.Log - Test Started for My Account Module
+2026-06-15 02:43:17 [main] INFO  org.utilities.qa.Log - Browser opened and DemoWebShop Tricentis launched successfully
+2026-06-15 02:43:17 [main] INFO  org.utilities.qa.Log - Executing ATC_020 - Verify My Account page navigation
+2026-06-15 02:43:17 [main] INFO  org.utilities.qa.Log - PostgreSQL database is connected successfully.
+2026-06-15 02:43:19 [main] INFO  org.utilities.qa.Log - Login completed
+2026-06-15 02:43:19 [main] INFO  org.utilities.qa.Log - Database connection closed.
+2026-06-15 02:43:19 [main] INFO  org.utilities.qa.Log - Opening My Account
+2026-06-15 02:43:19 [main] INFO  org.utilities.qa.Log - Checking if My Account is open
+2026-06-15 02:43:19 [main] INFO  org.utilities.qa.Log - My Account page title
+2026-06-15 02:43:19 [main] INFO  org.utilities.qa.Log - Checking if the link for orders is displayed
+2026-06-15 02:43:19 [main] INFO  org.utilities.qa.Log - Test ATC_020 passed successfully
+]]></system-out>
+    <system-err><![CDATA[Jun 15, 2026 2:43:15 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 149, returning the closest version; found: 148; Please update to a Selenium version that supports CDP version 149
+]]></system-err>
+  </testcase>
+</testsuite>

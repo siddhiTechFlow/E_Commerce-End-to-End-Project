@@ -1,0 +1,12 @@
+org\tests\qa\CouponTest.class
+org\tests\qa\ProductDetailsTest.class
+org\tests\qa\WishlistTest.class
+org\tests\qa\LoginTest.class
+org\tests\qa\SearchProductTest.class
+org\tests\qa\OrderTest.class
+org\tests\qa\RegisterTest.class
+org\tests\qa\MyAccountTest.class
+org\tests\qa\CheckoutTest.class
+org\tests\qa\CompareProductTest.class
+org\tests\qa\CartTest.class
+org\tests\qa\PriceFilterTest.class

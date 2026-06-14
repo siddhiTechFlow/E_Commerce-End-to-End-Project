@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="28" passed="27" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-15T02:40:09 IST" name="Suite" finished-at="2026-06-15T02:43:20 IST" duration-ms="190830">
+    <groups>
+    </groups>
+    <test started-at="2026-06-15T02:40:09 IST" name="Test" finished-at="2026-06-15T02:43:20 IST" duration-ms="190830">
+      <class name="org.tests.qa.MyAccountTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.MyAccountTest@3d299393]" started-at="2026-06-15T02:43:14 IST" name="setUp" finished-at="2026-06-15T02:43:17 IST" duration-ms="3231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_020_Verify_my_acc_page_navigation()[pri:0, instance:org.tests.qa.MyAccountTest@3d299393]" started-at="2026-06-15T02:43:17 IST" name="ATC_020_Verify_my_acc_page_navigation" finished-at="2026-06-15T02:43:19 IST" duration-ms="2143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_020_Verify_my_acc_page_navigation -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.MyAccountTest@3d299393]" started-at="2026-06-15T02:43:19 IST" name="tearDownT" finished-at="2026-06-15T02:43:20 IST" duration-ms="272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_020_Verify_my_acc_page_navigation status=SUCCESS method=MyAccountTest.ATC_020_Verify_my_acc_page_navigation()[pri:0, instance:org.tests.qa.MyAccountTest@3d299393] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+      </class> <!-- org.tests.qa.MyAccountTest -->
+      <class name="org.tests.qa.WishlistTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.WishlistTest@63f9b562]" started-at="2026-06-15T02:42:22 IST" name="setUp" finished-at="2026-06-15T02:42:25 IST" duration-ms="3318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_009_Add_product_to_wishlist()[pri:0, instance:org.tests.qa.WishlistTest@63f9b562]" started-at="2026-06-15T02:42:25 IST" name="ATC_009_Add_product_to_wishlist" finished-at="2026-06-15T02:42:29 IST" duration-ms="3475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_009_Add_product_to_wishlist -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.WishlistTest@63f9b562]" started-at="2026-06-15T02:42:29 IST" name="tearDownT" finished-at="2026-06-15T02:42:29 IST" duration-ms="409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_009_Add_product_to_wishlist status=SUCCESS method=WishlistTest.ATC_009_Add_product_to_wishlist()[pri:0, instance:org.tests.qa.WishlistTest@63f9b562] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+      </class> <!-- org.tests.qa.WishlistTest -->
+      <class name="org.tests.qa.PriceFilterTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.PriceFilterTest@4b1ec694]" started-at="2026-06-15T02:43:08 IST" name="setUp" finished-at="2026-06-15T02:43:11 IST" duration-ms="3489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_005_Verify_prod_sort()[pri:0, instance:org.tests.qa.PriceFilterTest@4b1ec694]" started-at="2026-06-15T02:43:11 IST" name="ATC_005_Verify_prod_sort" finished-at="2026-06-15T02:43:14 IST" duration-ms="2603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_005_Verify_prod_sort -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.PriceFilterTest@4b1ec694]" started-at="2026-06-15T02:43:14 IST" name="tearDownT" finished-at="2026-06-15T02:43:14 IST" duration-ms="145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_005_Verify_prod_sort status=SUCCESS method=PriceFilterTest.ATC_005_Verify_prod_sort()[pri:0, instance:org.tests.qa.PriceFilterTest@4b1ec694] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+      </class> <!-- org.tests.qa.PriceFilterTest -->
+      <class name="org.tests.qa.CheckoutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.CheckoutTest@6cbbb9c4]" started-at="2026-06-15T02:42:06 IST" name="setUp" finished-at="2026-06-15T02:42:10 IST" duration-ms="3495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_010_Complete_full_checkout()[pri:0, instance:org.tests.qa.CheckoutTest@6cbbb9c4]" started-at="2026-06-15T02:42:10 IST" name="ATC_010_Complete_full_checkout" finished-at="2026-06-15T02:42:21 IST" duration-ms="11394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_010_Complete_full_checkout -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.CheckoutTest@6cbbb9c4]" started-at="2026-06-15T02:42:21 IST" name="tearDownT" finished-at="2026-06-15T02:42:22 IST" duration-ms="635" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_010_Complete_full_checkout status=SUCCESS method=CheckoutTest.ATC_010_Complete_full_checkout()[pri:0, instance:org.tests.qa.CheckoutTest@6cbbb9c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+      </class> <!-- org.tests.qa.CheckoutTest -->
+      <class name="org.tests.qa.SearchProductTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.SearchProductTest@7a6ea47d]" started-at="2026-06-15T02:40:39 IST" name="setUp" finished-at="2026-06-15T02:40:43 IST" duration-ms="3672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_004_Verify_product_with_valid_keyword(java.lang.String)[pri:1, instance:org.tests.qa.SearchProductTest@7a6ea47d]" started-at="2026-06-15T02:40:43 IST" name="ATC_004_Verify_product_with_valid_keyword" data-provider="validProdSrch" finished-at="2026-06-15T02:40:44 IST" duration-ms="1196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jeans]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_004_Verify_product_with_valid_keyword -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.SearchProductTest@7a6ea47d]" started-at="2026-06-15T02:40:44 IST" name="tearDownT" finished-at="2026-06-15T02:40:44 IST" duration-ms="236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_004_Verify_product_with_valid_keyword status=SUCCESS method=SearchProductTest.ATC_004_Verify_product_with_valid_keyword(java.lang.String)[pri:1, instance:org.tests.qa.SearchProductTest@7a6ea47d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.SearchProductTest@7a6ea47d]" started-at="2026-06-15T02:40:44 IST" name="setUp" finished-at="2026-06-15T02:40:48 IST" duration-ms="3399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_004_Verify_product_with_valid_keyword(java.lang.String)[pri:1, instance:org.tests.qa.SearchProductTest@7a6ea47d]" started-at="2026-06-15T02:40:48 IST" name="ATC_004_Verify_product_with_valid_keyword" data-provider="validProdSrch" finished-at="2026-06-15T02:40:48 IST" duration-ms="885" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[computer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_004_Verify_product_with_valid_keyword -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.SearchProductTest@7a6ea47d]" started-at="2026-06-15T02:40:48 IST" name="tearDownT" finished-at="2026-06-15T02:40:49 IST" duration-ms="184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_004_Verify_product_with_valid_keyword status=SUCCESS method=SearchProductTest.ATC_004_Verify_product_with_valid_keyword(java.lang.String)[pri:1, instance:org.tests.qa.SearchProductTest@7a6ea47d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.SearchProductTest@7a6ea47d]" started-at="2026-06-15T02:40:49 IST" name="setUp" finished-at="2026-06-15T02:40:52 IST" duration-ms="3192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_017_Verify_product_search_with_invalid_keyword(java.lang.String)[pri:2, instance:org.tests.qa.SearchProductTest@7a6ea47d]" started-at="2026-06-15T02:40:52 IST" name="ATC_017_Verify_product_search_with_invalid_keyword" data-provider="invalidProdSrch" finished-at="2026-06-15T02:40:53 IST" duration-ms="973" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[xyzabc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_017_Verify_product_search_with_invalid_keyword -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.SearchProductTest@7a6ea47d]" started-at="2026-06-15T02:40:53 IST" name="tearDownT" finished-at="2026-06-15T02:40:53 IST" duration-ms="142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_017_Verify_product_search_with_invalid_keyword status=SUCCESS method=SearchProductTest.ATC_017_Verify_product_search_with_invalid_keyword(java.lang.String)[pri:2, instance:org.tests.qa.SearchProductTest@7a6ea47d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.SearchProductTest@7a6ea47d]" started-at="2026-06-15T02:40:53 IST" name="setUp" finished-at="2026-06-15T02:40:57 IST" duration-ms="4067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_017_Verify_product_search_with_invalid_keyword(java.lang.String)[pri:2, instance:org.tests.qa.SearchProductTest@7a6ea47d]" started-at="2026-06-15T02:40:57 IST" name="ATC_017_Verify_product_search_with_invalid_keyword" data-provider="invalidProdSrch" finished-at="2026-06-15T02:40:58 IST" duration-ms="870" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[marketplace]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_017_Verify_product_search_with_invalid_keyword -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.SearchProductTest@7a6ea47d]" started-at="2026-06-15T02:40:58 IST" name="tearDownT" finished-at="2026-06-15T02:40:58 IST" duration-ms="155" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_017_Verify_product_search_with_invalid_keyword status=SUCCESS method=SearchProductTest.ATC_017_Verify_product_search_with_invalid_keyword(java.lang.String)[pri:2, instance:org.tests.qa.SearchProductTest@7a6ea47d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+      </class> <!-- org.tests.qa.SearchProductTest -->
+      <class name="org.tests.qa.CompareProductTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.CompareProductTest@65e22def]" started-at="2026-06-15T02:42:58 IST" name="setUp" finished-at="2026-06-15T02:43:02 IST" duration-ms="4297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_019_Verify_compare_product_function()[pri:0, instance:org.tests.qa.CompareProductTest@65e22def]" started-at="2026-06-15T02:43:02 IST" name="ATC_019_Verify_compare_product_function" finished-at="2026-06-15T02:43:07 IST" duration-ms="5602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_019_Verify_compare_product_function -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.CompareProductTest@65e22def]" started-at="2026-06-15T02:43:07 IST" name="tearDownT" finished-at="2026-06-15T02:43:08 IST" duration-ms="220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_019_Verify_compare_product_function status=SUCCESS method=CompareProductTest.ATC_019_Verify_compare_product_function()[pri:0, instance:org.tests.qa.CompareProductTest@65e22def] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+      </class> <!-- org.tests.qa.CompareProductTest -->
+      <class name="org.tests.qa.CouponTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.CouponTest@5426cb36]" started-at="2026-06-15T02:42:44 IST" name="setUp" finished-at="2026-06-15T02:42:48 IST" duration-ms="3841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_011_Apply_valid_coupon()[pri:1, instance:org.tests.qa.CouponTest@5426cb36]" started-at="2026-06-15T02:42:48 IST" name="ATC_011_Apply_valid_coupon" finished-at="2026-06-15T02:42:48 IST" duration-ms="4" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Blocked : Valid coupon code is not available in Demo Web Shop application]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Blocked : Valid coupon code is not available in Demo Web Shop application
+at org.tests.qa.CouponTest.ATC_011_Apply_valid_coupon(CouponTest.java:81)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_011_Apply_valid_coupon -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.CouponTest@5426cb36]" started-at="2026-06-15T02:42:48 IST" name="tearDownT" finished-at="2026-06-15T02:42:48 IST" duration-ms="428" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_011_Apply_valid_coupon status=SKIP method=CouponTest.ATC_011_Apply_valid_coupon()[pri:1, instance:org.tests.qa.CouponTest@5426cb36] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.CouponTest@5426cb36]" started-at="2026-06-15T02:42:48 IST" name="setUp" finished-at="2026-06-15T02:42:53 IST" duration-ms="4995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_012_Apply_invalid_coupon()[pri:2, instance:org.tests.qa.CouponTest@5426cb36]" started-at="2026-06-15T02:42:53 IST" name="ATC_012_Apply_invalid_coupon" finished-at="2026-06-15T02:42:57 IST" duration-ms="4357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_012_Apply_invalid_coupon -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.CouponTest@5426cb36]" started-at="2026-06-15T02:42:57 IST" name="tearDownT" finished-at="2026-06-15T02:42:58 IST" duration-ms="125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_012_Apply_invalid_coupon status=SUCCESS method=CouponTest.ATC_012_Apply_invalid_coupon()[pri:2, instance:org.tests.qa.CouponTest@5426cb36] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+      </class> <!-- org.tests.qa.CouponTest -->
+      <class name="org.tests.qa.OrderTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.OrderTest@20ead579]" started-at="2026-06-15T02:42:29 IST" name="setUp" finished-at="2026-06-15T02:42:34 IST" duration-ms="4888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_013_Verify_order_history()[pri:1, instance:org.tests.qa.OrderTest@20ead579]" started-at="2026-06-15T02:42:34 IST" name="ATC_013_Verify_order_history" finished-at="2026-06-15T02:42:37 IST" duration-ms="3154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_013_Verify_order_history -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.OrderTest@20ead579]" started-at="2026-06-15T02:42:37 IST" name="tearDownT" finished-at="2026-06-15T02:42:37 IST" duration-ms="190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_013_Verify_order_history status=SUCCESS method=OrderTest.ATC_013_Verify_order_history()[pri:1, instance:org.tests.qa.OrderTest@20ead579] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.OrderTest@20ead579]" started-at="2026-06-15T02:42:37 IST" name="setUp" finished-at="2026-06-15T02:42:41 IST" duration-ms="3564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_014_Verify_order_page_navigation()[pri:2, instance:org.tests.qa.OrderTest@20ead579]" started-at="2026-06-15T02:42:41 IST" name="ATC_014_Verify_order_page_navigation" finished-at="2026-06-15T02:42:44 IST" duration-ms="2684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_014_Verify_order_page_navigation -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.OrderTest@20ead579]" started-at="2026-06-15T02:42:44 IST" name="tearDownT" finished-at="2026-06-15T02:42:44 IST" duration-ms="188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_014_Verify_order_page_navigation status=SUCCESS method=OrderTest.ATC_014_Verify_order_page_navigation()[pri:2, instance:org.tests.qa.OrderTest@20ead579] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+      </class> <!-- org.tests.qa.OrderTest -->
+      <class name="org.tests.qa.ProductDetailsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:40:58 IST" name="setUp" finished-at="2026-06-15T02:41:02 IST" duration-ms="3664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_018_Verify_product_details_page(java.lang.String)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:02 IST" name="ATC_018_Verify_product_details_page" data-provider="productDetails" finished-at="2026-06-15T02:41:05 IST" duration-ms="2710" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Computing and Internet]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_018_Verify_product_details_page -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:05 IST" name="tearDownT" finished-at="2026-06-15T02:41:05 IST" duration-ms="160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_018_Verify_product_details_page status=SUCCESS method=ProductDetailsTest.ATC_018_Verify_product_details_page(java.lang.String)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:05 IST" name="setUp" finished-at="2026-06-15T02:41:09 IST" duration-ms="4443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_018_Verify_product_details_page(java.lang.String)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:09 IST" name="ATC_018_Verify_product_details_page" data-provider="productDetails" finished-at="2026-06-15T02:41:12 IST" duration-ms="2938" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[14.1-inch Laptop]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_018_Verify_product_details_page -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:12 IST" name="tearDownT" finished-at="2026-06-15T02:41:12 IST" duration-ms="310" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_018_Verify_product_details_page status=SUCCESS method=ProductDetailsTest.ATC_018_Verify_product_details_page(java.lang.String)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:12 IST" name="setUp" finished-at="2026-06-15T02:41:16 IST" duration-ms="3974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_018_Verify_product_details_page(java.lang.String)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:16 IST" name="ATC_018_Verify_product_details_page" data-provider="productDetails" finished-at="2026-06-15T02:41:19 IST" duration-ms="2650" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[50's Rockabilly Polka Dot Top JR Plus Size]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_018_Verify_product_details_page -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:19 IST" name="tearDownT" finished-at="2026-06-15T02:41:19 IST" duration-ms="190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_018_Verify_product_details_page status=SUCCESS method=ProductDetailsTest.ATC_018_Verify_product_details_page(java.lang.String)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:19 IST" name="setUp" finished-at="2026-06-15T02:41:23 IST" duration-ms="4211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_018_Verify_product_details_page(java.lang.String)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:23 IST" name="ATC_018_Verify_product_details_page" data-provider="productDetails" finished-at="2026-06-15T02:41:26 IST" duration-ms="2589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Diamond Tennis Bracelet]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_018_Verify_product_details_page -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:26 IST" name="tearDownT" finished-at="2026-06-15T02:41:26 IST" duration-ms="179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_018_Verify_product_details_page status=SUCCESS method=ProductDetailsTest.ATC_018_Verify_product_details_page(java.lang.String)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:26 IST" name="setUp" finished-at="2026-06-15T02:41:30 IST" duration-ms="3778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_018_Verify_product_details_page(java.lang.String)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:30 IST" name="ATC_018_Verify_product_details_page" data-provider="productDetails" finished-at="2026-06-15T02:41:32 IST" duration-ms="2250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Blue and green Sneaker]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_018_Verify_product_details_page -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:32 IST" name="tearDownT" finished-at="2026-06-15T02:41:32 IST" duration-ms="158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_018_Verify_product_details_page status=SUCCESS method=ProductDetailsTest.ATC_018_Verify_product_details_page(java.lang.String)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:32 IST" name="setUp" finished-at="2026-06-15T02:41:36 IST" duration-ms="3361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_018_Verify_product_details_page(java.lang.String)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:36 IST" name="ATC_018_Verify_product_details_page" data-provider="productDetails" finished-at="2026-06-15T02:41:38 IST" duration-ms="2435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Blue Jeans]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_018_Verify_product_details_page -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:38 IST" name="tearDownT" finished-at="2026-06-15T02:41:38 IST" duration-ms="274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_018_Verify_product_details_page status=SUCCESS method=ProductDetailsTest.ATC_018_Verify_product_details_page(java.lang.String)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:38 IST" name="setUp" finished-at="2026-06-15T02:41:42 IST" duration-ms="3503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_018_Verify_product_details_page(java.lang.String)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:42 IST" name="ATC_018_Verify_product_details_page" data-provider="productDetails" finished-at="2026-06-15T02:41:44 IST" duration-ms="2369" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Denim Short with Rhinestones]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_018_Verify_product_details_page -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58]" started-at="2026-06-15T02:41:44 IST" name="tearDownT" finished-at="2026-06-15T02:41:44 IST" duration-ms="138" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_018_Verify_product_details_page status=SUCCESS method=ProductDetailsTest.ATC_018_Verify_product_details_page(java.lang.String)[pri:0, instance:org.tests.qa.ProductDetailsTest@54b2fc58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+      </class> <!-- org.tests.qa.ProductDetailsTest -->
+      <class name="org.tests.qa.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.LoginTest@158e9f6e]" started-at="2026-06-15T02:40:22 IST" name="setUp" finished-at="2026-06-15T02:40:26 IST" duration-ms="4276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_002_Verify_login_with_valid_credentials()[pri:1, instance:org.tests.qa.LoginTest@158e9f6e]" started-at="2026-06-15T02:40:26 IST" name="ATC_002_Verify_login_with_valid_credentials" finished-at="2026-06-15T02:40:28 IST" duration-ms="1513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_002_Verify_login_with_valid_credentials -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.LoginTest@158e9f6e]" started-at="2026-06-15T02:40:28 IST" name="tearDownT" finished-at="2026-06-15T02:40:28 IST" duration-ms="110" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_002_Verify_login_with_valid_credentials status=SUCCESS method=LoginTest.ATC_002_Verify_login_with_valid_credentials()[pri:1, instance:org.tests.qa.LoginTest@158e9f6e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.LoginTest@158e9f6e]" started-at="2026-06-15T02:40:28 IST" name="setUp" finished-at="2026-06-15T02:40:31 IST" duration-ms="3368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_003_Verify_login_with_invalid_password()[pri:2, instance:org.tests.qa.LoginTest@158e9f6e]" started-at="2026-06-15T02:40:31 IST" name="ATC_003_Verify_login_with_invalid_password" finished-at="2026-06-15T02:40:33 IST" duration-ms="1156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_003_Verify_login_with_invalid_password -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.LoginTest@158e9f6e]" started-at="2026-06-15T02:40:33 IST" name="tearDownT" finished-at="2026-06-15T02:40:33 IST" duration-ms="468" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_003_Verify_login_with_invalid_password status=SUCCESS method=LoginTest.ATC_003_Verify_login_with_invalid_password()[pri:2, instance:org.tests.qa.LoginTest@158e9f6e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.LoginTest@158e9f6e]" started-at="2026-06-15T02:40:33 IST" name="setUp" finished-at="2026-06-15T02:40:37 IST" duration-ms="3493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_016_Verify_logout_function()[pri:3, instance:org.tests.qa.LoginTest@158e9f6e]" started-at="2026-06-15T02:40:37 IST" name="ATC_016_Verify_logout_function" finished-at="2026-06-15T02:40:39 IST" duration-ms="2183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_016_Verify_logout_function -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.LoginTest@158e9f6e]" started-at="2026-06-15T02:40:39 IST" name="tearDownT" finished-at="2026-06-15T02:40:39 IST" duration-ms="188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_016_Verify_logout_function status=SUCCESS method=LoginTest.ATC_016_Verify_logout_function()[pri:3, instance:org.tests.qa.LoginTest@158e9f6e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+      </class> <!-- org.tests.qa.LoginTest -->
+      <class name="org.tests.qa.CartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.CartTest@daf22f0]" started-at="2026-06-15T02:41:44 IST" name="setUp" finished-at="2026-06-15T02:41:48 IST" duration-ms="3346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_006_Add_product_to_the_cart()[pri:1, instance:org.tests.qa.CartTest@daf22f0]" started-at="2026-06-15T02:41:48 IST" name="ATC_006_Add_product_to_the_cart" finished-at="2026-06-15T02:41:51 IST" duration-ms="3076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_006_Add_product_to_the_cart -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.CartTest@daf22f0]" started-at="2026-06-15T02:41:51 IST" name="tearDownT" finished-at="2026-06-15T02:41:51 IST" duration-ms="126" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_006_Add_product_to_the_cart status=SUCCESS method=CartTest.ATC_006_Add_product_to_the_cart()[pri:1, instance:org.tests.qa.CartTest@daf22f0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.CartTest@daf22f0]" started-at="2026-06-15T02:41:51 IST" name="setUp" finished-at="2026-06-15T02:41:54 IST" duration-ms="3299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_007_Update_cart_item_quantity()[pri:2, instance:org.tests.qa.CartTest@daf22f0]" started-at="2026-06-15T02:41:54 IST" name="ATC_007_Update_cart_item_quantity" finished-at="2026-06-15T02:41:59 IST" duration-ms="4330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_007_Update_cart_item_quantity -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.CartTest@daf22f0]" started-at="2026-06-15T02:41:59 IST" name="tearDownT" finished-at="2026-06-15T02:41:59 IST" duration-ms="364" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_007_Update_cart_item_quantity status=SUCCESS method=CartTest.ATC_007_Update_cart_item_quantity()[pri:2, instance:org.tests.qa.CartTest@daf22f0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.CartTest@daf22f0]" started-at="2026-06-15T02:41:59 IST" name="setUp" finished-at="2026-06-15T02:42:03 IST" duration-ms="3547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_008_Remove_item_from_cart()[pri:3, instance:org.tests.qa.CartTest@daf22f0]" started-at="2026-06-15T02:42:03 IST" name="ATC_008_Remove_item_from_cart" finished-at="2026-06-15T02:42:06 IST" duration-ms="3623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_008_Remove_item_from_cart -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.CartTest@daf22f0]" started-at="2026-06-15T02:42:06 IST" name="tearDownT" finished-at="2026-06-15T02:42:06 IST" duration-ms="160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_008_Remove_item_from_cart status=SUCCESS method=CartTest.ATC_008_Remove_item_from_cart()[pri:3, instance:org.tests.qa.CartTest@daf22f0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+      </class> <!-- org.tests.qa.CartTest -->
+      <class name="org.tests.qa.RegisterTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.RegisterTest@69aa7d76]" started-at="2026-06-15T02:40:09 IST" name="setUp" finished-at="2026-06-15T02:40:14 IST" duration-ms="4725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_001_Verify_user_registration_with_valid_data()[pri:1, instance:org.tests.qa.RegisterTest@69aa7d76]" started-at="2026-06-15T02:40:14 IST" name="ATC_001_Verify_user_registration_with_valid_data" finished-at="2026-06-15T02:40:16 IST" duration-ms="2403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_001_Verify_user_registration_with_valid_data -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.RegisterTest@69aa7d76]" started-at="2026-06-15T02:40:16 IST" name="tearDownT" finished-at="2026-06-15T02:40:17 IST" duration-ms="285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_001_Verify_user_registration_with_valid_data status=SUCCESS method=RegisterTest.ATC_001_Verify_user_registration_with_valid_data()[pri:1, instance:org.tests.qa.RegisterTest@69aa7d76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.RegisterTest@69aa7d76]" started-at="2026-06-15T02:40:17 IST" name="setUp" finished-at="2026-06-15T02:40:21 IST" duration-ms="4632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ATC_015_Verify_user_registration_with_empty_fields()[pri:2, instance:org.tests.qa.RegisterTest@69aa7d76]" started-at="2026-06-15T02:40:21 IST" name="ATC_015_Verify_user_registration_with_empty_fields" finished-at="2026-06-15T02:40:22 IST" duration-ms="836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATC_015_Verify_user_registration_with_empty_fields -->
+        <test-method is-config="true" signature="tearDownT(org.testng.ITestResult)[pri:0, instance:org.tests.qa.RegisterTest@69aa7d76]" started-at="2026-06-15T02:40:22 IST" name="tearDownT" finished-at="2026-06-15T02:40:22 IST" duration-ms="180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ATC_015_Verify_user_registration_with_empty_fields status=SUCCESS method=RegisterTest.ATC_015_Verify_user_registration_with_empty_fields()[pri:2, instance:org.tests.qa.RegisterTest@69aa7d76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownT -->
+      </class> <!-- org.tests.qa.RegisterTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
