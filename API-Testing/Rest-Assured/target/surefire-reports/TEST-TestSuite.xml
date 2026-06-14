@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="31.515" tests="19" errors="0" skipped="0" failures="0" flakes="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\API Testing RESTAssured\Eclipse workspace RESTAssured\DummyJSON_API_Testing\target\test-classes;D:\API Testing RESTAssured\Eclipse workspace RESTAssured\DummyJSON_API_Testing\target\classes;C:\Users\Siddhi\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Siddhi\.m2\repository\io\rest-assured\rest-assured\6.0.0\rest-assured-6.0.0.jar;C:\Users\Siddhi\.m2\repository\org\apache\groovy\groovy\5.0.3\groovy-5.0.3.jar;C:\Users\Siddhi\.m2\repository\org\apache\groovy\groovy-xml\5.0.3\groovy-xml-5.0.3.jar;C:\Users\Siddhi\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Siddhi\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Siddhi\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Siddhi\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Siddhi\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Siddhi\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Siddhi\.m2\repository\io\rest-assured\xml-path\6.0.0\xml-path-6.0.0.jar;C:\Users\Siddhi\.m2\repository\org\apache\commons\commons-lang3\3.19.0\commons-lang3-3.19.0.jar;C:\Users\Siddhi\.m2\repository\io\rest-assured\json-path\6.0.0\json-path-6.0.0.jar;C:\Users\Siddhi\.m2\repository\org\apache\groovy\groovy-json\5.0.3\groovy-json-5.0.3.jar;C:\Users\Siddhi\.m2\repository\io\rest-assured\rest-assured-common\6.0.0\rest-assured-common-6.0.0.jar;C:\Users\Siddhi\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Siddhi\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Siddhi\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Siddhi\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Siddhi\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.44.0\selenium-java-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-api\4.44.0\selenium-api-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.44.0\selenium-chrome-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.44.0\selenium-chromium-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-json\4.44.0\selenium-json-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.44.0\selenium-manager-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v146\4.44.0\selenium-devtools-v146-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v147\4.44.0\selenium-devtools-v147-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v148\4.44.0\selenium-devtools-v148-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.44.0\selenium-edge-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.44.0\selenium-firefox-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-http\4.44.0\selenium-http-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.44.0\selenium-ie-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.44.0\selenium-remote-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\Siddhi\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Siddhi\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Siddhi\.m2\repository\com\google\errorprone\error_prone_annotations\2.47.0\error_prone_annotations-2.47.0.jar;C:\Users\Siddhi\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-api\1.62.0\opentelemetry-api-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-context\1.62.0\opentelemetry-context-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-common\1.62.0\opentelemetry-common-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.62.0\opentelemetry-exporter-logging-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.62.0\opentelemetry-sdk-common-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.62.0\opentelemetry-sdk-extension-autoconfigure-spi-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.62.0\opentelemetry-sdk-extension-autoconfigure-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.62.0\opentelemetry-sdk-trace-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.62.0\opentelemetry-sdk-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.62.0\opentelemetry-sdk-metrics-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.62.0\opentelemetry-sdk-logs-1.62.0.jar;C:\Users\Siddhi\.m2\repository\net\bytebuddy\byte-buddy\1.18.8-jdk5\byte-buddy-1.18.8-jdk5.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-os\4.44.0\selenium-os-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.44.0\selenium-safari-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-support\4.44.0\selenium-support-4.44.0.jar;C:\Users\Siddhi\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.22.0\jackson-databind-2.22.0.jar;C:\Users\Siddhi\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.22\jackson-annotations-2.22.jar;C:\Users\Siddhi\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.22.0\jackson-core-2.22.0.jar;C:\Users\Siddhi\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\Siddhi\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Siddhi\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Siddhi\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\Siddhi\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\Siddhi\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21.0.10\bin"/>
+    <property name="sun.java.command" value="C:\Users\Siddhi\AppData\Local\Temp\surefire1489046772136395892\surefirebooter-20260614221858226_3.jar C:\Users\Siddhi\AppData\Local\Temp\surefire1489046772136395892 2026-06-14T22-18-58_048-jvmRun1 surefire-20260614221858226_1tmp surefire_0-20260614221858226_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\API Testing RESTAssured\Eclipse workspace RESTAssured\DummyJSON_API_Testing\target\test-classes;D:\API Testing RESTAssured\Eclipse workspace RESTAssured\DummyJSON_API_Testing\target\classes;C:\Users\Siddhi\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Siddhi\.m2\repository\io\rest-assured\rest-assured\6.0.0\rest-assured-6.0.0.jar;C:\Users\Siddhi\.m2\repository\org\apache\groovy\groovy\5.0.3\groovy-5.0.3.jar;C:\Users\Siddhi\.m2\repository\org\apache\groovy\groovy-xml\5.0.3\groovy-xml-5.0.3.jar;C:\Users\Siddhi\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Siddhi\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Siddhi\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Siddhi\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Siddhi\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Siddhi\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Siddhi\.m2\repository\io\rest-assured\xml-path\6.0.0\xml-path-6.0.0.jar;C:\Users\Siddhi\.m2\repository\org\apache\commons\commons-lang3\3.19.0\commons-lang3-3.19.0.jar;C:\Users\Siddhi\.m2\repository\io\rest-assured\json-path\6.0.0\json-path-6.0.0.jar;C:\Users\Siddhi\.m2\repository\org\apache\groovy\groovy-json\5.0.3\groovy-json-5.0.3.jar;C:\Users\Siddhi\.m2\repository\io\rest-assured\rest-assured-common\6.0.0\rest-assured-common-6.0.0.jar;C:\Users\Siddhi\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Siddhi\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Siddhi\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Siddhi\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Siddhi\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.44.0\selenium-java-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-api\4.44.0\selenium-api-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.44.0\selenium-chrome-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.44.0\selenium-chromium-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-json\4.44.0\selenium-json-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.44.0\selenium-manager-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v146\4.44.0\selenium-devtools-v146-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v147\4.44.0\selenium-devtools-v147-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v148\4.44.0\selenium-devtools-v148-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.44.0\selenium-edge-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.44.0\selenium-firefox-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-http\4.44.0\selenium-http-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.44.0\selenium-ie-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.44.0\selenium-remote-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\Siddhi\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Siddhi\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Siddhi\.m2\repository\com\google\errorprone\error_prone_annotations\2.47.0\error_prone_annotations-2.47.0.jar;C:\Users\Siddhi\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-api\1.62.0\opentelemetry-api-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-context\1.62.0\opentelemetry-context-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-common\1.62.0\opentelemetry-common-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.62.0\opentelemetry-exporter-logging-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.62.0\opentelemetry-sdk-common-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.62.0\opentelemetry-sdk-extension-autoconfigure-spi-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.62.0\opentelemetry-sdk-extension-autoconfigure-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.62.0\opentelemetry-sdk-trace-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.62.0\opentelemetry-sdk-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.62.0\opentelemetry-sdk-metrics-1.62.0.jar;C:\Users\Siddhi\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.62.0\opentelemetry-sdk-logs-1.62.0.jar;C:\Users\Siddhi\.m2\repository\net\bytebuddy\byte-buddy\1.18.8-jdk5\byte-buddy-1.18.8-jdk5.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-os\4.44.0\selenium-os-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.44.0\selenium-safari-driver-4.44.0.jar;C:\Users\Siddhi\.m2\repository\org\seleniumhq\selenium\selenium-support\4.44.0\selenium-support-4.44.0.jar;C:\Users\Siddhi\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.22.0\jackson-databind-2.22.0.jar;C:\Users\Siddhi\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.22\jackson-annotations-2.22.jar;C:\Users\Siddhi\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.22.0\jackson-core-2.22.0.jar;C:\Users\Siddhi\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\Siddhi\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Siddhi\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Siddhi\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\Siddhi\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\Siddhi\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Siddhi"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21.0.10"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\API Testing RESTAssured\Eclipse workspace RESTAssured\DummyJSON_API_Testing"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Siddhi\AppData\Local\Temp\surefire1489046772136395892\surefirebooter-20260614221858226_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.10+8-LTS-217"/>
+    <property name="user.name" value="Siddhi"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Siddhi\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Siddhi\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.10"/>
+    <property name="user.dir" value="D:\API Testing RESTAssured\Eclipse workspace RESTAssured\DummyJSON_API_Testing"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21.0.10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python314\Scripts\;C:\Python314\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files\dotnet\;C:\Program Files\Maven\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;D:\AllureReport\Allure\allure-2.42.1\bin;C:\Users\Siddhi\AppData\Local\Microsoft\WindowsApps;C:\Users\Siddhi\AppData\Local\GitHubDesktop\bin;C:\Users\Siddhi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Siddhi\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.10+8-LTS-217"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="addProdToWl" classname="org.tests.qa.POST_RequestTest" time="4.491">
+    <system-out><![CDATA[<html>
+  <body>{
+  "wishlistId": 1,
+  "userId": 1,
+  "productId": 1,
+  "message": "Product added to wishlist successfully"
+}
+</body>
+</html>
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="resetPassEmail" classname="org.tests.qa.POST_RequestTest" time="11.836">
+    <system-out><![CDATA[{
+    "email": "siddhi.more@example.com",
+    "message": "Password reset link sent successfully"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="login" classname="org.tests.qa.POST_RequestTest" time="0.539">
+    <system-out><![CDATA[200
+{
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3ODE0NTU3NTgsImV4cCI6MTc4MjMxOTc1OH0.cylV6BBaHC_Ep0nZct68u0cOCPmGXt6Oaj6m7oW0ALM",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3ODE0NTU3NTgsImV4cCI6MTc4NDA0Nzc1OH0.smAY8REJ43J_i-vutYEUrbpYLQM22YBYiqNNqob5Unw",
+    "id": 1,
+    "username": "emilys",
+    "email": "emily.johnson@x.dummyjson.com",
+    "firstName": "Emily",
+    "lastName": "Johnson",
+    "gender": "female",
+    "image": "https://dummyjson.com/icon/emilys/128"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="addItemtocart" classname="org.tests.qa.POST_RequestTest" time="0.504"/>
+  <testcase name="newUserRegister" classname="org.tests.qa.POST_RequestTest" time="0.992">
+    <system-out><![CDATA[{
+    "userId": 201,
+    "firstName": "Siddhi",
+    "lastName": "More",
+    "email": "siddhi.more@example.com",
+    "message": "User registered successfully"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="placeAnOrder" classname="org.tests.qa.POST_RequestTest" time="1.947">
+    <system-out><![CDATA[{
+    "orderId": 1001,
+    "userId": 1,
+    "cartId": 1,
+    "deliveryAddressId": 101,
+    "orderStatus": "Placed",
+    "paymentMode": "UPI",
+    "totalAmount": 1299.99,
+    "message": "Order placed successfully"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="deliveryAdd" classname="org.tests.qa.POST_RequestTest" time="0.894">
+    <system-out><![CDATA[{
+    "addressId": 101,
+    "addressLine1": "NNP Goregaon",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400065",
+    "country": "India",
+    "label": "Home",
+    "message": "Address added successfully"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="validCouponCode" classname="org.tests.qa.POST_RequestTest" time="0.534">
+    <system-out><![CDATA[{
+    "couponCode": "SAVE20",
+    "isValid": true,
+    "discountPercentage": 20,
+    "discountAmount": 200,
+    "message": "Coupon applied successfully"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="listAllProd" classname="org.tests.qa.GET_RequestTest" time="0.516"/>
+  <testcase name="getProductById" classname="org.tests.qa.GET_RequestTest" time="2.285"/>
+  <testcase name="getCurrentUserCart" classname="org.tests.qa.GET_RequestTest" time="0.431"/>
+  <testcase name="getCurrentUserProfile" classname="org.tests.qa.GET_RequestTest" time="0.423">
+    <system-out><![CDATA[Token in GET Profile: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3ODE0NTU3NTgsImV4cCI6MTc4MjMxOTc1OH0.cylV6BBaHC_Ep0nZct68u0cOCPmGXt6Oaj6m7oW0ALM
+]]></system-out>
+  </testcase>
+  <testcase name="getWishlist" classname="org.tests.qa.GET_RequestTest" time="0.866">
+    <system-out><![CDATA[{
+    "wishlistId": 101,
+    "userId": 1,
+    "wishlistItems": [
+        {
+            "productId": 1,
+            "productName": "Essence Mascara Lash Princess",
+            "price": 9.99
+        },
+        {
+            "productId": 2,
+            "productName": "Eyeshadow Palette",
+            "price": 19.99
+        },
+        {
+            "productId": 3,
+            "productName": "Powder Canister",
+            "price": 14.99
+        },
+        {
+            "productId": 4,
+            "productName": "Red Lipstick",
+            "price": 12.99
+        }
+    ],
+    "totalItems": 4
+}
+]]></system-out>
+  </testcase>
+  <testcase name="getAllOrders" classname="org.tests.qa.GET_RequestTest" time="0.489">
+    <system-out><![CDATA[{
+    "userId": 1,
+    "orders": [
+        {
+            "orderId": 1001,
+            "totalAmount": 1299.99,
+            "orderStatus": "Delivered"
+        },
+        {
+            "orderId": 1002,
+            "totalAmount": 899.50,
+            "orderStatus": "Shipped"
+        },
+        {
+            "orderId": 1003,
+            "totalAmount": 599.99,
+            "orderStatus": "Processing"
+        },
+        {
+            "orderId": 1004,
+            "totalAmount": 1499.00,
+            "orderStatus": "Placed"
+        }
+    ],
+    "totalOrders": 4
+}
+]]></system-out>
+  </testcase>
+  <testcase name="getOrderDetails" classname="org.tests.qa.GET_RequestTest" time="0.502">
+    <system-out><![CDATA[{
+    "orderId": 1001,
+    "userId": 1,
+    "orderStatus": "Delivered",
+    "paymentMode": "UPI",
+    "totalAmount": 1299.99,
+    "items": [
+        {
+            "productId": 1,
+            "productName": "Essence Mascara Lash Princess",
+            "quantity": 2,
+            "price": 9.99
+        }
+    ],
+    "deliveryAddress": {
+        "address": "NNP Goregaon",
+        "city": "Mumbai",
+        "state": "Maharashtra"
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="updateCartQty" classname="org.tests.qa.PUT_RequestTest" time="0.442">
+    <system-out><![CDATA[{
+    "id": 113,
+    "products": [
+        {
+            "id": 1,
+            "title": "Essence Mascara Lash Princess",
+            "price": 9.99,
+            "quantity": 5,
+            "total": 49.95,
+            "discountPercentage": 10.48,
+            "discountedPrice": 45,
+            "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp"
+        },
+        {
+            "id": 110,
+            "title": "Selfie Lamp with iPhone",
+            "price": 14.99,
+            "quantity": 5,
+            "total": 74.95,
+            "discountPercentage": 19.4,
+            "discountedPrice": 60,
+            "thumbnail": "https://cdn.dummyjson.com/product-images/mobile-accessories/selfie-lamp-with-iphone/thumbnail.webp"
+        },
+        {
+            "id": 112,
+            "title": "TV Studio Camera Pedestal",
+            "price": 499.99,
+            "quantity": 3,
+            "total": 1499.97,
+            "discountPercentage": 8.31,
+            "discountedPrice": 1375,
+            "thumbnail": "https://cdn.dummyjson.com/product-images/mobile-accessories/tv-studio-camera-pedestal/thumbnail.webp"
+        },
+        {
+            "id": 113,
+            "title": "Generic Motorcycle",
+            "price": 3999.99,
+            "quantity": 18,
+            "total": 71999.81999999999,
+            "discountPercentage": 12.1,
+            "discountedPrice": 63288,
+            "thumbnail": "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/thumbnail.webp"
+        }
+    ],
+    "total": 73624.68999999999,
+    "discountedTotal": 64768,
+    "userId": 113,
+    "totalProducts": 4,
+    "totalQuantity": 31
+}
+]]></system-out>
+  </testcase>
+  <testcase name="updateUserProfile" classname="org.tests.qa.PUT_RequestTest" time="0.408">
+    <system-out><![CDATA[{
+    "id": 1,
+    "firstName": "Siddhi",
+    "lastName": "More",
+    "maidenName": "Smith",
+    "age": 21,
+    "gender": "female",
+    "email": "siddhim@gmail.com",
+    "phone": "+81 965-431-3024",
+    "username": "emilys",
+    "password": "emilyspass",
+    "birthDate": "1996-5-30",
+    "image": "https://dummyjson.com/icon/emilys/128",
+    "bloodGroup": "O-",
+    "height": 193.24,
+    "weight": 63.16,
+    "eyeColor": "Green",
+    "hair": {
+        "color": "Brown",
+        "type": "Curly"
+    },
+    "ip": "42.48.100.32",
+    "address": {
+        "address": "626 Main Street",
+        "city": "Phoenix",
+        "state": "Mississippi",
+        "stateCode": "MS",
+        "postalCode": "29112",
+        "coordinates": {
+            "lat": -77.16213,
+            "lng": -92.084824
+        },
+        "country": "United States"
+    },
+    "macAddress": "47:fa:41:18:ec:eb",
+    "university": "University of Wisconsin--Madison",
+    "bank": {
+        "cardExpire": "05/28",
+        "cardNumber": "3693233511855044",
+        "cardType": "Diners Club International",
+        "currency": "GBP",
+        "iban": "GB74MH2UZLR9TRPHYNU8F8"
+    },
+    "company": {
+        "department": "Engineering",
+        "name": "Dooley, Kozey and Cronin",
+        "title": "Sales Manager",
+        "address": {
+            "address": "263 Tenth Street",
+            "city": "San Francisco",
+            "state": "Wisconsin",
+            "stateCode": "WI",
+            "postalCode": "37657",
+            "coordinates": {
+                "lat": 71.814525,
+                "lng": -161.150263
+            },
+            "country": "United States"
+        }
+    },
+    "ein": "977-175",
+    "ssn": "900-590-289",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36",
+    "crypto": {
+        "coin": "Bitcoin",
+        "wallet": "0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a",
+        "network": "Ethereum (ERC20)"
+    },
+    "role": "admin"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="deleteCart" classname="org.tests.qa.DELETE_RequestTest" time="0.465">
+    <system-out><![CDATA[{
+    "id": 1,
+    "products": [
+        {
+            "id": 162,
+            "title": "Blue Frock",
+            "price": 29.99,
+            "quantity": 4,
+            "total": 119.96,
+            "discountPercentage": 12.13,
+            "discountedTotal": 105.41,
+            "thumbnail": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp"
+        },
+        {
+            "id": 113,
+            "title": "Generic Motorcycle",
+            "price": 3999.99,
+            "quantity": 3,
+            "total": 11999.97,
+            "discountPercentage": 12.1,
+            "discountedTotal": 10547.97,
+            "thumbnail": "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/thumbnail.webp"
+        },
+        {
+            "id": 122,
+            "title": "iPhone 6",
+            "price": 299.99,
+            "quantity": 3,
+            "total": 899.97,
+            "discountPercentage": 6.69,
+            "discountedTotal": 839.76,
+            "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/iphone-6/thumbnail.webp"
+        },
+        {
+            "id": 138,
+            "title": "Baseball Ball",
+            "price": 8.99,
+            "quantity": 2,
+            "total": 17.98,
+            "discountPercentage": 1.71,
+            "discountedTotal": 17.67,
+            "thumbnail": "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-ball/thumbnail.webp"
+        }
+    ],
+    "total": 13037.88,
+    "discountedTotal": 11510.81,
+    "userId": 1,
+    "totalProducts": 4,
+    "totalQuantity": 12,
+    "isDeleted": true,
+    "deletedOn": "2026-06-14T16:49:30.573Z"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="canceltheOrder" classname="org.tests.qa.DELETE_RequestTest" time="0.951">
+    <system-out><![CDATA[{
+    "orderId": 1001,
+    "userId": 1,
+    "orderStatus": "Cancelled",
+    "cancelReason": "Changed my mind",
+    "message": "Order cancelled successfully"
+}
+]]></system-out>
+  </testcase>
+</testsuite>

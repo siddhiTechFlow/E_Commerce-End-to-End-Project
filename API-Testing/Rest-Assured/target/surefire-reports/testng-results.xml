@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-14T22:18:59 IST" name="Dummy JSON API Automation Suite" finished-at="2026-06-14T22:19:29 IST" duration-ms="30461">
+    <groups>
+    </groups>
+    <test started-at="2026-06-14T22:18:59 IST" name="Test" finished-at="2026-06-14T22:19:29 IST" duration-ms="30461">
+      <class name="org.tests.qa.PUT_RequestTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.PUT_RequestTest@4fb61f4a]" started-at="2026-06-14T22:19:27 IST" name="setUp" finished-at="2026-06-14T22:19:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="updateCartQty()[pri:1, instance:org.tests.qa.PUT_RequestTest@4fb61f4a]" started-at="2026-06-14T22:19:27 IST" name="updateCartQty" finished-at="2026-06-14T22:19:27 IST" duration-ms="442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateCartQty -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.PUT_RequestTest@4fb61f4a]" started-at="2026-06-14T22:19:27 IST" name="setUp" finished-at="2026-06-14T22:19:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="updateUserProfile()[pri:2, instance:org.tests.qa.PUT_RequestTest@4fb61f4a]" started-at="2026-06-14T22:19:27 IST" name="updateUserProfile" finished-at="2026-06-14T22:19:28 IST" duration-ms="408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserProfile -->
+      </class> <!-- org.tests.qa.PUT_RequestTest -->
+      <class name="org.tests.qa.DELETE_RequestTest">
+        <test-method signature="deleteCart()[pri:1, instance:org.tests.qa.DELETE_RequestTest@4fb0f2b9]" started-at="2026-06-14T22:19:28 IST" name="deleteCart" finished-at="2026-06-14T22:19:28 IST" duration-ms="463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCart -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.DELETE_RequestTest@4fb0f2b9]" started-at="2026-06-14T22:19:28 IST" name="setUp" finished-at="2026-06-14T22:19:28 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.DELETE_RequestTest@4fb0f2b9]" started-at="2026-06-14T22:19:28 IST" name="setUp" finished-at="2026-06-14T22:19:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="canceltheOrder()[pri:2, instance:org.tests.qa.DELETE_RequestTest@4fb0f2b9]" started-at="2026-06-14T22:19:28 IST" name="canceltheOrder" finished-at="2026-06-14T22:19:29 IST" duration-ms="952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canceltheOrder -->
+      </class> <!-- org.tests.qa.DELETE_RequestTest -->
+      <class name="org.tests.qa.GET_RequestTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.GET_RequestTest@3e58a80e]" started-at="2026-06-14T22:19:21 IST" name="setUp" finished-at="2026-06-14T22:19:21 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="listAllProd()[pri:1, instance:org.tests.qa.GET_RequestTest@3e58a80e]" started-at="2026-06-14T22:19:21 IST" name="listAllProd" finished-at="2026-06-14T22:19:22 IST" duration-ms="516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listAllProd -->
+        <test-method signature="getProductById()[pri:2, instance:org.tests.qa.GET_RequestTest@3e58a80e]" started-at="2026-06-14T22:19:22 IST" name="getProductById" finished-at="2026-06-14T22:19:24 IST" duration-ms="2286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductById -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.GET_RequestTest@3e58a80e]" started-at="2026-06-14T22:19:22 IST" name="setUp" finished-at="2026-06-14T22:19:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.GET_RequestTest@3e58a80e]" started-at="2026-06-14T22:19:24 IST" name="setUp" finished-at="2026-06-14T22:19:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getCurrentUserCart()[pri:4, instance:org.tests.qa.GET_RequestTest@3e58a80e]" started-at="2026-06-14T22:19:24 IST" name="getCurrentUserCart" finished-at="2026-06-14T22:19:25 IST" duration-ms="430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCurrentUserCart -->
+        <test-method signature="getCurrentUserProfile()[pri:5, instance:org.tests.qa.GET_RequestTest@3e58a80e]" started-at="2026-06-14T22:19:25 IST" name="getCurrentUserProfile" finished-at="2026-06-14T22:19:25 IST" duration-ms="423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCurrentUserProfile -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.GET_RequestTest@3e58a80e]" started-at="2026-06-14T22:19:25 IST" name="setUp" finished-at="2026-06-14T22:19:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getWishlist()[pri:6, instance:org.tests.qa.GET_RequestTest@3e58a80e]" started-at="2026-06-14T22:19:25 IST" name="getWishlist" finished-at="2026-06-14T22:19:26 IST" duration-ms="865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWishlist -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.GET_RequestTest@3e58a80e]" started-at="2026-06-14T22:19:25 IST" name="setUp" finished-at="2026-06-14T22:19:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.GET_RequestTest@3e58a80e]" started-at="2026-06-14T22:19:26 IST" name="setUp" finished-at="2026-06-14T22:19:26 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getAllOrders()[pri:7, instance:org.tests.qa.GET_RequestTest@3e58a80e]" started-at="2026-06-14T22:19:26 IST" name="getAllOrders" finished-at="2026-06-14T22:19:26 IST" duration-ms="486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllOrders -->
+        <test-method signature="getOrderDetails()[pri:8, instance:org.tests.qa.GET_RequestTest@3e58a80e]" started-at="2026-06-14T22:19:26 IST" name="getOrderDetails" finished-at="2026-06-14T22:19:27 IST" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOrderDetails -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.GET_RequestTest@3e58a80e]" started-at="2026-06-14T22:19:26 IST" name="setUp" finished-at="2026-06-14T22:19:26 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- org.tests.qa.GET_RequestTest -->
+      <class name="org.tests.qa.POST_RequestTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.POST_RequestTest@188715b5]" started-at="2026-06-14T22:18:59 IST" name="setUp" finished-at="2026-06-14T22:18:59 IST" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addProdToWl()[pri:0, instance:org.tests.qa.POST_RequestTest@188715b5]" started-at="2026-06-14T22:18:59 IST" name="addProdToWl" finished-at="2026-06-14T22:19:04 IST" duration-ms="4837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProdToWl -->
+        <test-method signature="resetPassEmail()[pri:0, instance:org.tests.qa.POST_RequestTest@188715b5]" started-at="2026-06-14T22:19:04 IST" name="resetPassEmail" finished-at="2026-06-14T22:19:16 IST" duration-ms="11835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetPassEmail -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.POST_RequestTest@188715b5]" started-at="2026-06-14T22:19:04 IST" name="setUp" finished-at="2026-06-14T22:19:04 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.POST_RequestTest@188715b5]" started-at="2026-06-14T22:19:16 IST" name="setUp" finished-at="2026-06-14T22:19:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="login()[pri:1, instance:org.tests.qa.POST_RequestTest@188715b5]" started-at="2026-06-14T22:19:16 IST" name="login" finished-at="2026-06-14T22:19:17 IST" duration-ms="538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.POST_RequestTest@188715b5]" started-at="2026-06-14T22:19:17 IST" name="setUp" finished-at="2026-06-14T22:19:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addItemtocart()[pri:2, instance:org.tests.qa.POST_RequestTest@188715b5]" started-at="2026-06-14T22:19:17 IST" name="addItemtocart" finished-at="2026-06-14T22:19:17 IST" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemtocart -->
+        <test-method signature="newUserRegister()[pri:3, instance:org.tests.qa.POST_RequestTest@188715b5]" started-at="2026-06-14T22:19:17 IST" name="newUserRegister" finished-at="2026-06-14T22:19:18 IST" duration-ms="990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newUserRegister -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.POST_RequestTest@188715b5]" started-at="2026-06-14T22:19:17 IST" name="setUp" finished-at="2026-06-14T22:19:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.POST_RequestTest@188715b5]" started-at="2026-06-14T22:19:18 IST" name="setUp" finished-at="2026-06-14T22:19:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="placeAnOrder()[pri:6, instance:org.tests.qa.POST_RequestTest@188715b5]" started-at="2026-06-14T22:19:18 IST" name="placeAnOrder" finished-at="2026-06-14T22:19:20 IST" duration-ms="1947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeAnOrder -->
+        <test-method signature="deliveryAdd()[pri:7, instance:org.tests.qa.POST_RequestTest@188715b5]" started-at="2026-06-14T22:19:20 IST" name="deliveryAdd" finished-at="2026-06-14T22:19:21 IST" duration-ms="892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deliveryAdd -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.POST_RequestTest@188715b5]" started-at="2026-06-14T22:19:20 IST" name="setUp" finished-at="2026-06-14T22:19:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validCouponCode()[pri:7, instance:org.tests.qa.POST_RequestTest@188715b5]" started-at="2026-06-14T22:19:21 IST" name="validCouponCode" finished-at="2026-06-14T22:19:21 IST" duration-ms="532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validCouponCode -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.tests.qa.POST_RequestTest@188715b5]" started-at="2026-06-14T22:19:21 IST" name="setUp" finished-at="2026-06-14T22:19:21 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- org.tests.qa.POST_RequestTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Dummy JSON API Automation Suite -->
+</testng-results>

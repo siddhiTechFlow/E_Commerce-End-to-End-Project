@@ -1,0 +1,15 @@
+
+<suite name="Dummy JSON API Automation Suite">
+	<listeners>
+		<listener class-name="org.listeners.qa.TestListeners" />
+	</listeners>
+
+	<test thread-count="5" name="Test">
+		<classes>
+				<class name="org.tests.qa.POST_RequestTest" />
+				<class name="org.tests.qa.GET_RequestTest" />
+				<class name="org.tests.qa.PUT_RequestTest" />
+				<class name="org.tests.qa.DELETE_RequestTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
