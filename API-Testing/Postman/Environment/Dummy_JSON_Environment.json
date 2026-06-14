@@ -1,0 +1,76 @@
+{
+	"id": "4f4e0a1e-a5cd-444b-bf05-19e1b33b890e",
+	"name": "Dummy JSON variables",
+	"values": [
+		{
+			"key": "base_url",
+			"value": "https://dummyjson.com",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "mock_base_url",
+			"value": "https://3e7e6d40-6440-4b18-97ac-e920da287a78.mock.pstmn.io",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3ODA5NzgyNzYsImV4cCI6MTc4MTg0MjI3Nn0.sSHn8HWZodhI8TYY92KFbnd0FCq2bCpKAaO4IBLHCuo",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "userID",
+			"value": 1,
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "productID",
+			"value": "1",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "cartID",
+			"value": "209",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "orderID",
+			"value": "1001",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "randomEmail",
+			"value": "user1780942997593@test.com",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "randomPhone",
+			"value": "9868745913",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "orderReference",
+			"value": "ORD1780943963517",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "addressLabel",
+			"value": "Home_1780943759768",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"color": 240,
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2026-06-09T04:17:08.460Z",
+	"_postman_exported_using": "Postman/12.14.0"
+}
