@@ -1,0 +1,304 @@
+{
+  "info": {
+    "_postman_id": "68325391-4ab2-459c-b663-5d00d01e6778",
+    "name": "GET Requests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54692788",
+    "_collection_link": "https://go.postman.co/collection/54692788-68325391-4ab2-459c-b663-5d00d01e6778?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "4. List all products with filters",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "    });\r",
+              "\r",
+              "pm.test(\"Response time is less than 2000ms.\", function() {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+              "});\r",
+              "\r",
+              "let response = pm.response.json();\r",
+              "\r",
+              "pm.test(\"Products list is not empty.\", function(){\r",
+              "    pm.expect(response.products.length).to.be.greaterThan(0);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Products are returned\", function () {\r",
+              "    pm.expect(response.products.length).to.eql(response.limit);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Pagination values are correct\", function () {\r",
+              "    pm.expect(response.limit).to.eql(10);\r",
+              "    pm.expect(response.skip).to.eql(0);\r",
+              "});\r",
+              "\r",
+              "pm.environment.set(\"productID\", response.products[0].id);"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/products?limit=10&skip=0",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "products"
+          ],
+          "query": [
+            {
+              "key": "limit",
+              "value": "10"
+            },
+            {
+              "key": "skip",
+              "value": "0"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "5. Get product by ID",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () \r",
+              "{\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Response time is less than 1000ms\", function () \r",
+              "{\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+              "});\r",
+              "\r",
+              "let res = pm.response.json();\r",
+              "\r",
+              "pm.test(\"Product ID matches environment productID\", function () \r",
+              "{\r",
+              "    pm.expect(res.id).to.eql(Number(pm.environment.get(\"productID\")));\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Product details are present\", function () \r",
+              "{\r",
+              "    pm.expect(res).to.have.property(\"title\");\r",
+              "    pm.expect(res).to.have.property(\"price\");\r",
+              "    pm.expect(res).to.have.property(\"category\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/products/{{productID}}",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "products",
+            "{{productID}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "6. List all categories",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function()\r",
+              "{\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "let res = pm.response.json();\r",
+              "\r",
+              "pm.test(\"The list of categories is not empty.\", function()\r",
+              "{\r",
+              "    pm.expect(res.length).to.be.greaterThan(0);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Total number of categories: \" + res.length, function () {\r",
+              "    pm.expect(res.length).to.be.greaterThan(0);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"All Categories are unique.\",function(){\r",
+              "    let uniqueCategories = [...new Set(res)];\r",
+              "    pm.expect(uniqueCategories.length).to.eql(res.length);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"All Categories are strings.\",function(){\r",
+              "    res.forEach(category =>{\r",
+              "     pm.expect(category).to.be.a(\"string\")\r",
+              "});\r",
+              "\r",
+              "});\r",
+              "\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/products/category-list",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "products",
+            "category-list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "8. Get current user cart",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "let res = pm.response.json();\r",
+              "\r",
+              "pm.test(\"Cart belongs to User 5\", function () {\r",
+              "    pm.expect(res.carts[0].userId).to.eql(5);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"User has at least one cart\", function () {\r",
+              "    pm.expect(res.carts.length).to.be.greaterThan(0);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Total carts count matches response\", function () {\r",
+              "    pm.expect(res.total).to.eql(res.carts.length);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/carts/user/5",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "carts",
+            "user",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "18. Get current user profile",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "let res = pm.response.json();\r",
+              "\r",
+              "pm.test(\"User ID matches logged in user\", function () {\r",
+              "    pm.expect(res.id).to.eql(Number(pm.environment.get(\"userID\")));\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Email is present\", function () {\r",
+              "    pm.expect(res.email).to.exist;\r",
+              "});\r",
+              "\r",
+              "pm.test(\"User name is present\", function () {\r",
+              "    pm.expect(res.username).to.exist;\r",
+              "});\r",
+              "\r",
+              "pm.test(\"First name is present\", function () {\r",
+              "    pm.expect(res.firstName).to.exist;\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/auth/me",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "auth",
+            "me"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

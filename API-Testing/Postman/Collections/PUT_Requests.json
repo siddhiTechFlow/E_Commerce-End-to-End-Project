@@ -1,0 +1,140 @@
+{
+  "info": {
+    "_postman_id": "7d9ca425-d8df-4904-8240-3b2bfb72249e",
+    "name": "PUT Request",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54692788",
+    "_collection_link": "https://go.postman.co/collection/54692788-7d9ca425-d8df-4904-8240-3b2bfb72249e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "9. Update cart item quantity",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Response time is less than 1000ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+              "});\r",
+              "\r",
+              "let res = pm.response.json();\r",
+              "\r",
+              "pm.test(\"Correct cart is updated\", function () {\r",
+              "    pm.expect(res.id).to.eql(100);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Cart contains products after update\", function () {\r",
+              "    pm.expect(res.products.length).to.be.greaterThan(0);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Product quantity update is accepted\", function () {\r",
+              "    let product = res.products.find(p => p.id === 100);\r",
+              "    pm.expect(product).to.exist;\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"merge\": true,\r\n  \"products\": [\r\n    {\r\n      \"id\": 100,\r\n      \"quantity\": 15\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/carts/100",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "carts",
+            "100"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "19. Update User Profile",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "let res = pm.response.json();\r",
+              "\r",
+              "pm.test(\"User ID is correct\", function () {\r",
+              "    pm.expect(res.id).to.eql(Number(pm.environment.get(\"userID\")));\r",
+              "});\r",
+              "\r",
+              "pm.test(\"First Name is updated\", function () {\r",
+              "    pm.expect(res.firstName).to.eql(\"Siddhi\");\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Last Name is updated\", function () {\r",
+              "    pm.expect(res.lastName).to.eql(\"More\");\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Email is updated\", function () {\r",
+              "    pm.expect(res.email).to.eql(\"siddhim@gmail.com\");\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Age is updated\", function () {\r",
+              "    pm.expect(res.age).to.eql(21);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Address details are present\", function () {\r",
+              "    pm.expect(res.address.city).to.eql(\"Mumbai\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstName\": \"Siddhi\",\r\n    \"lastName\": \"More\",\r\n    \"email\": \"siddhim@gmail.com\",\r\n    \"age\": 21,\r\n    \"address\": {\r\n        \"address\": \"NNP Goregaon\",\r\n        \"city\": \"Mumbai\",\r\n        \"state\": \"Maharashtra\"\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/users/{{userID}}",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "users",
+            "{{userID}}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
