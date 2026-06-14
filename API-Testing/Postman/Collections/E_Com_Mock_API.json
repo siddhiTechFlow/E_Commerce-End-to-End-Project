@@ -1,0 +1,1549 @@
+{
+  "info": {
+    "_postman_id": "059553b8-e008-476a-94f3-6902416f6e91",
+    "name": "E_Com-Mock-API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54692788",
+    "_collection_link": "https://go.postman.co/collection/54692788-059553b8-e008-476a-94f3-6902416f6e91?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GET Request",
+      "item": [
+        {
+          "name": "12. Get Wishlist",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "let res = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"Wishlist belongs to correct user\", function () {\r",
+                  "    pm.expect(res.userId).to.eql(Number(pm.environment.get(\"userID\")));\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Wishlist contains items\", function () {\r",
+                  "    pm.expect(res.wishlistItems.length).to.be.greaterThan(0);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Total items count is correct\", function () {\r",
+                  "    pm.expect(res.totalItems).to.eql(res.wishlistItems.length);\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{mock_base_url}}/wishlist",
+              "host": [
+                "{{mock_base_url}}"
+              ],
+              "path": [
+                "wishlist"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "12. Get Wishlist Success",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{mock_base_url}}/wishlist",
+                  "host": [
+                    "{{mock_base_url}}"
+                  ],
+                  "path": [
+                    "wishlist"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"wishlistId\": 101,\n    \"userId\": 1,\n    \"wishlistItems\": [\n        {\n            \"productId\": 1,\n            \"productName\": \"Essence Mascara Lash Princess\",\n            \"price\": 9.99\n        },\n        {\n            \"productId\": 2,\n            \"productName\": \"Eyeshadow Palette\",\n            \"price\": 19.99\n        },\n        {\n            \"productId\": 3,\n            \"productName\": \"Powder Canister\",\n            \"price\": 14.99\n        },\n        {\n            \"productId\": 4,\n            \"productName\": \"Red Lipstick\",\n            \"price\": 12.99\n        }\n    ],\n    \"totalItems\": 4\n}"
+            }
+          ]
+        },
+        {
+          "name": "14. Get all orders for user",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "let res = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"User ID is correct\", function () {\r",
+                  "    pm.expect(res.userId).to.eql(Number(pm.environment.get(\"userID\")));\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Total orders count is correct\", function () {\r",
+                  "    pm.expect(res.totalOrders).to.eql(res.orders.length);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Orders are present\", function () {\r",
+                  "    pm.expect(res.orders.length).to.be.greaterThan(0);\r",
+                  "});\r",
+                  "\r",
+                  "pm.environment.set(\"orderID\", res.orders[0].orderId);"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"userId\": 1,\r\n  \"cartId\": 1,\r\n  \"paymentMode\": \"UPI\",\r\n  \"deliveryAddressId\": 101\r\n}"
+            },
+            "url": {
+              "raw": "{{mock_base_url}}/orders",
+              "host": [
+                "{{mock_base_url}}"
+              ],
+              "path": [
+                "orders"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "14. Get all orders for user success",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{mock_base_url}}/orders",
+                  "host": [
+                    "{{mock_base_url}}"
+                  ],
+                  "path": [
+                    "orders"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "body": "{\r\n  \"userId\": 1,\r\n  \"orders\": [\r\n    {\r\n      \"orderId\": 1001,\r\n      \"totalAmount\": 1299.99,\r\n      \"orderStatus\": \"Delivered\"\r\n    },\r\n    {\r\n      \"orderId\": 1002,\r\n      \"totalAmount\": 899.50,\r\n      \"orderStatus\": \"Shipped\"\r\n    },\r\n    {\r\n      \"orderId\": 1003,\r\n      \"totalAmount\": 599.99,\r\n      \"orderStatus\": \"Processing\"\r\n    },\r\n    {\r\n      \"orderId\": 1004,\r\n      \"totalAmount\": 1499.00,\r\n      \"orderStatus\": \"Placed\"\r\n    }\r\n  ],\r\n  \"totalOrders\": 4\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "15. Get order details",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "let res = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"Order ID matches environment orderID\", function () {\r",
+                  "    pm.expect(res.orderId).to.eql(Number(pm.environment.get(\"orderID\")));\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Order contains items\", function () {\r",
+                  "    pm.expect(res.items.length).to.be.greaterThan(0);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Order amount is valid\", function () {\r",
+                  "    pm.expect(res.totalAmount).to.be.greaterThan(0);\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"userId\": 1,\r\n  \"cartId\": 1,\r\n  \"paymentMode\": \"UPI\",\r\n  \"deliveryAddressId\": 101\r\n}"
+            },
+            "url": {
+              "raw": "{{mock_base_url}}/orders/{{orderID}}",
+              "host": [
+                "{{mock_base_url}}"
+              ],
+              "path": [
+                "orders",
+                "{{orderID}}"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "15. Get order details success",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{mock_base_url}}/orders/1001",
+                  "host": [
+                    "{{mock_base_url}}"
+                  ],
+                  "path": [
+                    "orders",
+                    "1001"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "body": "{\r\n  \"orderId\": 1001,\r\n  \"userId\": 1,\r\n  \"orderStatus\": \"Delivered\",\r\n  \"paymentMode\": \"UPI\",\r\n  \"totalAmount\": 1299.99,\r\n  \"items\": [\r\n    {\r\n      \"productId\": 1,\r\n      \"productName\": \"Essence Mascara Lash Princess\",\r\n      \"quantity\": 2,\r\n      \"price\": 9.99\r\n    }\r\n  ],\r\n  \"deliveryAddress\": {\r\n    \"address\": \"NNP Goregaon\",\r\n    \"city\": \"Mumbai\",\r\n    \"state\": \"Maharashtra\"\r\n  }\r\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "POST Request",
+      "item": [
+        {
+          "name": "11. Add to Wishlist",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "let res = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"Wishlist ID is generated\", function () {\r",
+                  "    pm.expect(res.wishlistId).to.exist;\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"User ID is correct\", function () {\r",
+                  "    pm.expect(res.userId).to.eql(Number(pm.environment.get(\"userID\")));\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Product ID is correct\", function () {\r",
+                  "    pm.expect(res.productId).to.eql(Number(pm.environment.get(\"productID\")));\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Success message is displayed\", function () {\r",
+                  "    pm.expect(res.message).to.eql(\"Product added to wishlist successfully\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "packages": {},
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {
+              "content-type": true
+            }
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"userId\": 1,\r\n    \"productId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{mock_base_url}}/wishlist",
+              "host": [
+                "{{mock_base_url}}"
+              ],
+              "path": [
+                "wishlist"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "11. Add to Wishlist Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"userId\": 1,\r\n  \"productId\": 1\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{mock_base_url}}/wishlist",
+                  "host": [
+                    "{{mock_base_url}}"
+                  ],
+                  "path": [
+                    "wishlist"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n  \"wishlistId\": 1,\r\n  \"userId\": 1,\r\n  \"productId\": 1,\r\n  \"message\": \"Product added to wishlist successfully\"\r\n}\r\n"
+            }
+          ]
+        },
+        {
+          "name": "13. Place an order",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 201\", function () {\r",
+                  "    pm.response.to.have.status(201);\r",
+                  "});\r",
+                  "\r",
+                  "let res = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"Order ID is generated\", function () {\r",
+                  "    pm.expect(res.orderId).to.exist;\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Order status is Placed\", function () {\r",
+                  "    pm.expect(res.orderStatus).to.eql(\"Placed\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Success message is displayed\", function () {\r",
+                  "    pm.expect(res.message).to.eql(\"Order placed successfully\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.environment.set(\"orderID\", res.orderId);"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  "pm.environment.set(\"orderReference\",\"ORD\" + Date.now());"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"userId\": 1,\r\n  \"cartId\": 1,\r\n  \"paymentMode\": \"UPI\",\r\n  \"deliveryAddressId\": 101,\r\n  \"orderReference\": \"{{orderReference}}\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{mock_base_url}}/orders",
+              "host": [
+                "{{mock_base_url}}"
+              ],
+              "path": [
+                "orders"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "13. Place an order success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{mock_base_url}}/orders",
+                  "host": [
+                    "{{mock_base_url}}"
+                  ],
+                  "path": [
+                    "orders"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "body": "{\r\n  \"orderId\": 1001,\r\n  \"userId\": 1,\r\n  \"cartId\": 1,\r\n  \"deliveryAddressId\": 101,\r\n  \"orderStatus\": \"Placed\",\r\n  \"paymentMode\": \"UPI\",\r\n  \"totalAmount\": 1299.99,\r\n  \"message\": \"Order placed successfully\"\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "16. Cancel an order",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "let res = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"Order ID matches environment orderID\", function () {\r",
+                  "    pm.expect(res.orderId).to.eql(Number(pm.environment.get(\"orderID\")));\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Order status is Cancelled\", function () {\r",
+                  "    pm.expect(res.orderStatus).to.eql(\"Cancelled\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Success message is displayed\", function () {\r",
+                  "    pm.expect(res.message).to.eql(\"Order cancelled successfully\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"reason\": \"Changed my mind\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{mock_base_url}}/orders/{{orderID}}/cancel",
+              "host": [
+                "{{mock_base_url}}"
+              ],
+              "path": [
+                "orders",
+                "{{orderID}}",
+                "cancel"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "16. Cancel an order success",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"reason\": \"Changed my mind\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{mock_base_url}}/orders/{{orderID}}/cancel",
+                  "host": [
+                    "{{mock_base_url}}"
+                  ],
+                  "path": [
+                    "orders",
+                    "{{orderID}}",
+                    "cancel"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "body": "{\r\n  \"orderId\": 1001,\r\n  \"userId\": 1,\r\n  \"orderStatus\": \"Cancelled\",\r\n  \"cancelReason\": \"Changed my mind\",\r\n  \"message\": \"Order cancelled successfully\"\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "17. Validate a coupon code",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "    });\r",
+                  "\r",
+                  "let res = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"Coupon is valid\", function () {\r",
+                  "    pm.expect(res.isValid).to.be.true;\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Discount percentage is 20\", function () {\r",
+                  "    pm.expect(res.discountPercentage).to.eql(20);\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"couponCode\": \"SAVE20\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{mock_base_url}}/coupons/validate",
+              "host": [
+                "{{mock_base_url}}"
+              ],
+              "path": [
+                "coupons",
+                "validate"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "17. Validate a coupon code success(POSITIVE)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"couponCode\": \"SAVE20\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{mock_base_url}}/coupons/validate",
+                  "host": [
+                    "{{mock_base_url}}"
+                  ],
+                  "path": [
+                    "coupons",
+                    "validate"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "body": "{\r\n  \"couponCode\": \"SAVE20\",\r\n  \"isValid\": true,\r\n  \"discountPercentage\": 20,\r\n  \"discountAmount\": 200,\r\n  \"message\": \"Coupon applied successfully\"\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "17. Validate a coupon code",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 400\", function () {\r",
+                  "    pm.response.to.have.status(400);\r",
+                  "    });\r",
+                  "\r",
+                  "let res = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"Coupon is invalid\", function () {\r",
+                  "    pm.expect(res.isValid).to.be.false;\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Error code is INVALID_COUPON\", function () {\r",
+                  "    pm.expect(res.errorCode).to.eql(\"INVALID_COUPON\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-mock-response-name",
+                "value": "17. Validate a coupon code (NEGATIVE)",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"couponCode\": \"WRONGCODE\"\r\n}"
+            },
+            "url": {
+              "raw": "{{mock_base_url}}/coupons/validate",
+              "host": [
+                "{{mock_base_url}}"
+              ],
+              "path": [
+                "coupons",
+                "validate"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "17. Validate a coupon code (NEGATIVE)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"reason\": \"Changed my mind\"\r\n}"
+                },
+                "url": {
+                  "raw": "{{mock_base_url}}/orders/{{orderID}}/cancel",
+                  "host": [
+                    "{{mock_base_url}}"
+                  ],
+                  "path": [
+                    "orders",
+                    "{{orderID}}",
+                    "cancel"
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "body": "{\r\n  \"couponCode\": \"INVALID123\",\r\n  \"isValid\": false,\r\n  \"errorCode\": \"INVALID_COUPON\",\r\n  \"message\": \"Coupon code is invalid\"\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "17. Validate a coupon code",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 422\", function () {\r",
+                  "    pm.response.to.have.status(422);\r",
+                  "});\r",
+                  "\r",
+                  "let res = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"Coupon is invalid\", function () {\r",
+                  "    pm.expect(res.isValid).to.be.false;\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Error code is EMPTY_COUPON\", function () {\r",
+                  "    pm.expect(res.errorCode).to.eql(\"EMPTY_COUPON\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-mock-response-name",
+                "value": "17. Validate a coupon code(Edge Case)",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"couponCode\": \"\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{mock_base_url}}/orders/{{orderID}}/cancel",
+              "host": [
+                "{{mock_base_url}}"
+              ],
+              "path": [
+                "orders",
+                "{{orderID}}",
+                "cancel"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "17. Validate a coupon code(Edge Case)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{mock_base_url}}/orders/{{orderID}}/cancel",
+                  "host": [
+                    "{{mock_base_url}}"
+                  ],
+                  "path": [
+                    "orders",
+                    "{{orderID}}",
+                    "cancel"
+                  ]
+                }
+              },
+              "status": "Unprocessable Content",
+              "code": 422,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "body": "{\r\n  \"isValid\": false,\r\n  \"errorCode\": \"EMPTY_COUPON\",\r\n  \"message\": \"Coupon code cannot be empty\"\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "1. New user registration",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 201\", function () {\r",
+                  "    pm.response.to.have.status(201);\r",
+                  "});\r",
+                  "\r",
+                  "let res = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"User ID is generated\", function () {\r",
+                  "    pm.expect(res.userId).to.exist;\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Registration success message is displayed\", function () {\r",
+                  "    pm.expect(res.message).to.eql(\"User registered successfully\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  "let timestamp = Date.now();\r",
+                  "\r",
+                  "pm.environment.set(\"randomEmail\", \"user\" + timestamp + \"@test.com\");\r",
+                  "pm.environment.set(\"randomPhone\", \"98\" + Math.floor(10000000 + Math.random() * 90000000));"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"firstName\": \"Siddhi\",\r\n  \"lastName\": \"More\",\r\n  \"email\": \"{{randomEmail}}\",\r\n  \"password\": \"Siddhi@123\",\r\n  \"phone\": \"{{randomPhone}}\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{mock_base_url}}/auth/register",
+              "host": [
+                "{{mock_base_url}}"
+              ],
+              "path": [
+                "auth",
+                "register"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "1. New user registration (POSITIVE)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{mock_base_url}}/auth/register",
+                  "host": [
+                    "{{mock_base_url}}"
+                  ],
+                  "path": [
+                    "auth",
+                    "register"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "body": "{\r\n  \"userId\": 201,\r\n  \"firstName\": \"Siddhi\",\r\n  \"lastName\": \"More\",\r\n  \"email\": \"siddhi.more@example.com\",\r\n  \"message\": \"User registered successfully\"\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "1. New User Registration (Already registered email)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 409\", function () {\r",
+                  "    pm.response.to.have.status(409);\r",
+                  "});\r",
+                  "\r",
+                  "let res = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"Email already exists error is returned\", function () {\r",
+                  "    pm.expect(res.errorCode).to.eql(\"EMAIL_ALREADY_EXISTS\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Error message is displayed\", function () {\r",
+                  "    pm.expect(res.message).to.eql(\"Email is already registered\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-mock-response-name",
+                "value": "1. New User Registration (NEGATIVE)",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"firstName\": \"Siddhi\",\r\n  \"lastName\": \"More\",\r\n  \"email\": \"siddhi.more@example.com\",\r\n  \"password\": \"Siddhi@123\",\r\n  \"phone\": \"9876543210\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{mock_base_url}}/auth/register",
+              "host": [
+                "{{mock_base_url}}"
+              ],
+              "path": [
+                "auth",
+                "register"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "1. New User Registration (NEGATIVE)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{mock_base_url}}/auth/register",
+                  "host": [
+                    "{{mock_base_url}}"
+                  ],
+                  "path": [
+                    "auth",
+                    "register"
+                  ]
+                }
+              },
+              "status": "Conflict",
+              "code": 409,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"errorCode\": \"EMAIL_ALREADY_EXISTS\",\n    \"message\": \"Email is already registered\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "3. Send reset password email",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "let res = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"Email is correct\", function () {\r",
+                  "    pm.expect(res.email).to.eql(\"siddhi.more@example.com\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Reset link message is displayed\", function () {\r",
+                  "    pm.expect(res.message).to.eql(\"Password reset link sent successfully\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"siddhi.more@example.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{mock_base_url}}/auth/forgot-password",
+              "host": [
+                "{{mock_base_url}}"
+              ],
+              "path": [
+                "auth",
+                "forgot-password"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "3. Send reset password email (POSITIVE)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "x-mock-response-name",
+                    "value": "",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"email\": \"siddhi.more@example.com\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{mock_base_url}}/auth/forgot-password",
+                  "host": [
+                    "{{mock_base_url}}"
+                  ],
+                  "path": [
+                    "auth",
+                    "forgot-password"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"email\": \"siddhi.more@example.com\",\n    \"message\": \"Password reset link sent successfully\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "3. Send reset password email",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 422\", function () {\r",
+                  "    pm.response.to.have.status(422);\r",
+                  "});\r",
+                  "\r",
+                  "let res = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"Email required error is returned\", function () {\r",
+                  "    pm.expect(res.errorCode).to.eql(\"EMAIL_REQUIRED\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Validation message is displayed\", function () {\r",
+                  "    pm.expect(res.message).to.eql(\"Email field cannot be empty\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-mock-response-name",
+                "value": "3. Send reset password email (EDGE CASE)",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{mock_base_url}}/auth/forgot-password",
+              "host": [
+                "{{mock_base_url}}"
+              ],
+              "path": [
+                "auth",
+                "forgot-password"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "3. Send reset password email (EDGE CASE)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"email\": \"\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{mock_base_url}}/auth/forgot-password",
+                  "host": [
+                    "{{mock_base_url}}"
+                  ],
+                  "path": [
+                    "auth",
+                    "forgot-password"
+                  ]
+                }
+              },
+              "status": "Unprocessable Content",
+              "code": 422,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"errorCode\": \"EMAIL_REQUIRED\",\n    \"message\": \"Email field cannot be empty\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "20. Add delivery address",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 201\", function () {\r",
+                  "    pm.response.to.have.status(201);\r",
+                  "});\r",
+                  "\r",
+                  "let res = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"Address ID is generated\", function () {\r",
+                  "    pm.expect(res.addressId).to.exist;\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Address added successfully\", function () {\r",
+                  "    pm.expect(res.message).to.eql(\"Address added successfully\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  "pm.environment.set(\"addressLabel\",\"Home_\" + Date.now());"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-mock-response-name",
+                "value": "20. Add delivery address (POSITIVE)",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"addressLine1\": \"NNP Goregaon\",\r\n  \"city\": \"Mumbai\",\r\n  \"state\": \"Maharashtra\",\r\n  \"pincode\": \"400065\",\r\n  \"country\": \"India\",\r\n  \"label\": \"{{addressLabel}}\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{mock_base_url}}/users/me/addresses",
+              "host": [
+                "{{mock_base_url}}"
+              ],
+              "path": [
+                "users",
+                "me",
+                "addresses"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "20. Add delivery address (POSITIVE)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"addressLine1\": \"NNP Goregaon\",\r\n  \"city\": \"Mumbai\",\r\n  \"state\": \"Maharashtra\",\r\n  \"pincode\": \"400065\",\r\n  \"country\": \"India\",\r\n  \"label\": \"{{addressLabel}}\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{mock_base_url}}/users/me/addresses",
+                  "host": [
+                    "{{mock_base_url}}"
+                  ],
+                  "path": [
+                    "users",
+                    "me",
+                    "addresses"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"addressId\": 101,\n  \"addressLine1\": \"NNP Goregaon\",\n  \"city\": \"Mumbai\",\n  \"state\": \"Maharashtra\",\n  \"pincode\": \"400065\",\n  \"country\": \"India\",\n  \"label\": \"Home\",\n  \"message\": \"Address added successfully\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "20. Add delivery address",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 400\", function () {\r",
+                  "    pm.response.to.have.status(400);\r",
+                  "});\r",
+                  "\r",
+                  "let res = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"Invalid pincode error returned\", function () {\r",
+                  "    pm.expect(res.error).to.eql(\"INVALID_PINCODE\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Validation message displayed\", function () {\r",
+                  "    pm.expect(res.message).to.eql(\"Pincode must be 6 digits\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-mock-response-name",
+                "value": "20. Add delivery address (NEGATIVE)(Invalid pin code)",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"addressLine1\": \"NNP Goregaon\",\r\n  \"city\": \"Mumbai\",\r\n  \"state\": \"Maharashtra\",\r\n  \"pincode\": \"123\",\r\n  \"country\": \"India\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{mock_base_url}}/users/me/addresses",
+              "host": [
+                "{{mock_base_url}}"
+              ],
+              "path": [
+                "users",
+                "me",
+                "addresses"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "20. Add delivery address (NEGATIVE)(Invalid pin code)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"addressLine1\": \"NNP Goregaon\",\r\n  \"city\": \"Mumbai\",\r\n  \"state\": \"Maharashtra\",\r\n  \"pincode\": \"123\",\r\n  \"country\": \"India\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{mock_base_url}}/users/me/addresses",
+                  "host": [
+                    "{{mock_base_url}}"
+                  ],
+                  "path": [
+                    "users",
+                    "me",
+                    "addresses"
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "body": "{\r\n  \"error\": \"INVALID_PINCODE\",\r\n  \"message\": \"Pincode must be 6 digits\"\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "20. Add delivery address",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 422\", function () {\r",
+                  "    pm.response.to.have.status(422);\r",
+                  "});\r",
+                  "\r",
+                  "let res = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"Address required error returned\", function () {\r",
+                  "    pm.expect(res.error).to.eql(\"ADDRESS_REQUIRED\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Validation message displayed\", function () {\r",
+                  "    pm.expect(res.message).to.eql(\"Address fields cannot be empty\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-mock-response-name",
+                "value": "20. Add delivery address (EDGE CASE)(Empty address)",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"addressLine1\": \"\",\r\n  \"city\": \"\",\r\n  \"state\": \"\",\r\n  \"pincode\": \"\",\r\n  \"country\": \"\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{mock_base_url}}/users/me/addresses",
+              "host": [
+                "{{mock_base_url}}"
+              ],
+              "path": [
+                "users",
+                "me",
+                "addresses"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "20. Add delivery address (EDGE CASE)(Empty address)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"addressLine1\": \"\",\r\n  \"city\": \"\",\r\n  \"state\": \"\",\r\n  \"pincode\": \"\",\r\n  \"country\": \"\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{mock_base_url}}/users/me/addresses",
+                  "host": [
+                    "{{mock_base_url}}"
+                  ],
+                  "path": [
+                    "users",
+                    "me",
+                    "addresses"
+                  ]
+                }
+              },
+              "status": "Unprocessable Content",
+              "code": 422,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "body": "{\r\n  \"error\": \"ADDRESS_REQUIRED\",\r\n  \"message\": \"Address fields cannot be empty\"\r\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "url",
+      "value": "https://3e7e6d40-6440-4b18-97ac-e920da287a78.mock.pstmn.io"
+    }
+  ]
+}
