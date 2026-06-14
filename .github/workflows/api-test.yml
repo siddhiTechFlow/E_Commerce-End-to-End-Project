@@ -32,4 +32,5 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
 
       - name: Run API Tests
+        working-directory: API-Testing/Rest-Assured
         run: mvn clean test
