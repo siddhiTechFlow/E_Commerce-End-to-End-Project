@@ -48,13 +48,12 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y postgresql-client
 
       - name: Create Tables and Insert Test Data
-        working-directory: automation-testing/DemoWebShop_AutomationTesting
         env:
           PGPASSWORD: psql42S
-        run: psql -h localhost -U postgres -d tricentis_automation -f src/test/resources/schema.sql
+        run: psql -h localhost -U postgres -d tricentis_automation -f DemoWebShop_AutomationTesting/src/test/resources/schema.sql
 
       - name: Run Selenium Tests
-        working-directory: automation-testing/DemoWebShop_AutomationTesting
+        working-directory: DemoWebShop_AutomationTesting
         run: mvn clean test
 
       - name: Upload Allure Results
@@ -62,11 +61,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: allure-results
-          path: automation-testing/DemoWebShop_AutomationTesting/allure-results
+          path: DemoWebShop_AutomationTesting/allure-results
 
       - name: Upload Screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: screenshots
-          path: automation-testing/DemoWebShop_AutomationTesting/Screenshots
+          path: DemoWebShop_AutomationTesting/Screenshots
