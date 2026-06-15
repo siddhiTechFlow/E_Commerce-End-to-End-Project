@@ -1,0 +1,72 @@
+name: Demo Web Shop Automation Tests
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  automation-testing:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: psql42S
+          POSTGRES_DB: tricentis_automation
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd="pg_isready -U postgres -d tricentis_automation"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Cache Maven Packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+
+      - name: Install PostgreSQL Client
+        run: sudo apt-get update && sudo apt-get install -y postgresql-client
+
+      - name: Create Tables and Insert Test Data
+        working-directory: automation-testing/DemoWebShop_AutomationTesting
+        env:
+          PGPASSWORD: psql42S
+        run: psql -h localhost -U postgres -d tricentis_automation -f src/test/resources/schema.sql
+
+      - name: Run Selenium Tests
+        working-directory: automation-testing/DemoWebShop_AutomationTesting
+        run: mvn clean test
+
+      - name: Upload Allure Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: automation-testing/DemoWebShop_AutomationTesting/allure-results
+
+      - name: Upload Screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: automation-testing/DemoWebShop_AutomationTesting/Screenshots

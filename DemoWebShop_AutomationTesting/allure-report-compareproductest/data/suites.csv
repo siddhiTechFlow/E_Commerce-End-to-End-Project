@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Add product to compare list and verify compare products page is displayed","10018","ATC_019_Verify_compare_product_function","Surefire suite","2026-06-15","passed","2026-06-15","org.tests.qa.CompareProductTest","Surefire test","org.tests.qa.CompareProductTest","ATC_019_Verify_compare_product_function"

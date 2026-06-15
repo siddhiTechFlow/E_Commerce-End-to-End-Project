@@ -1,0 +1,4 @@
+"BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
+"0","Demo Web Shop Automation (Tricentis) ","0","Login Module","1","0","As a User, I want to login with valid credentials so that I can access my account","0"
+"0","Demo Web Shop Automation (Tricentis) ","0","Login Module","1","0","As a logged- in User, I want to logout from the application","0"
+"0","Demo Web Shop Automation (Tricentis) ","0","Login Module","1","0","As a User, when I login with invalid password I should see an error message","0"

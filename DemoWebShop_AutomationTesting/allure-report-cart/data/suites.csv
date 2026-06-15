@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Add a product to the cart and verify cart count ","4591","ATC_006_Add_product_to_the_cart","Surefire suite","2026-06-15","passed","2026-06-15","org.tests.qa.CartTest","Surefire test","org.tests.qa.CartTest","ATC_006_Add_product_to_the_cart"
+"Update cart item quantity and verify updated total","4648","ATC_007_Update_cart_item_quantity","Surefire suite","2026-06-15","passed","2026-06-15","org.tests.qa.CartTest","Surefire test","org.tests.qa.CartTest","ATC_007_Update_cart_item_quantity"
+"Remove item from cart and verify cart is empty","3770","ATC_008_Remove_item_from_cart","Surefire suite","2026-06-15","passed","2026-06-15","org.tests.qa.CartTest","Surefire test","org.tests.qa.CartTest","ATC_008_Remove_item_from_cart"

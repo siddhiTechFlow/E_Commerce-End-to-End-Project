@@ -1,0 +1,1 @@
+{"uuid":"a657204b-7a05-47a2-bc33-81d2bbe2e39e","name":"org.tests.qa.OrderTest.setUp","children":["f6446c15-3288-4f75-a91e-13746c6fe4e8"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1781471557855,"stop":1781471561419}],"afters":[],"start":1781471557855,"stop":1781471561419}

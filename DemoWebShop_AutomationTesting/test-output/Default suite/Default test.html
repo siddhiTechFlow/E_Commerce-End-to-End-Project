@@ -1,0 +1,286 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>27/0/1</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jun 12 14:18:09 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>215 seconds (215214 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.tests.qa.CartTest.ATC_008_Remove_item_from_cart()'><b>ATC_008_Remove_item_from_cart</b><br>Test class: org.tests.qa.CartTest</td>
+<td></td>
+<td>3</td>
+<td>org.tests.qa.CartTest@1e5eb20a</td></tr>
+<tr>
+<td title='org.tests.qa.OrderTest.ATC_014_Verify_order_page_navigation()'><b>ATC_014_Verify_order_page_navigation</b><br>Test class: org.tests.qa.OrderTest</td>
+<td></td>
+<td>2</td>
+<td>org.tests.qa.OrderTest@789c3057</td></tr>
+<tr>
+<td title='org.tests.qa.RegisterTest.ATC_015_Verify_user_registration_with_empty_fields()'><b>ATC_015_Verify_user_registration_with_empty_fields</b><br>Test class: org.tests.qa.RegisterTest</td>
+<td></td>
+<td>0</td>
+<td>org.tests.qa.RegisterTest@679dd234</td></tr>
+<tr>
+<td title='org.tests.qa.WishlistTest.ATC_009_Add_product_to_wishlist()'><b>ATC_009_Add_product_to_wishlist</b><br>Test class: org.tests.qa.WishlistTest</td>
+<td></td>
+<td>3</td>
+<td>org.tests.qa.WishlistTest@6f5d0190</td></tr>
+<tr>
+<td title='org.tests.qa.CartTest.ATC_006_Add_product_to_the_cart()'><b>ATC_006_Add_product_to_the_cart</b><br>Test class: org.tests.qa.CartTest</td>
+<td></td>
+<td>3</td>
+<td>org.tests.qa.CartTest@1e5eb20a</td></tr>
+<tr>
+<td title='org.tests.qa.ProductDetailsTest.ATC_018_Verify_product_details_page()'><b>ATC_018_Verify_product_details_page</b><br>Test class: org.tests.qa.ProductDetailsTest<br>Parameters: Diamond Tennis Bracelet</td>
+<td></td>
+<td>2</td>
+<td>org.tests.qa.ProductDetailsTest@39941489</td></tr>
+<tr>
+<td title='org.tests.qa.PriceFilterTest.ATC_005_Verify_prod_sort()'><b>ATC_005_Verify_prod_sort</b><br>Test class: org.tests.qa.PriceFilterTest</td>
+<td></td>
+<td>2</td>
+<td>org.tests.qa.PriceFilterTest@604d23fa</td></tr>
+<tr>
+<td title='org.tests.qa.SearchProductTest.ATC_004_Verify_product_with_valid_keyword()'><b>ATC_004_Verify_product_with_valid_keyword</b><br>Test class: org.tests.qa.SearchProductTest<br>Parameters: computer</td>
+<td></td>
+<td>0</td>
+<td>org.tests.qa.SearchProductTest@60cb1ed6</td></tr>
+<tr>
+<td title='org.tests.qa.RegisterTest.ATC_001_Verify_user_registration_with_valid_data()'><b>ATC_001_Verify_user_registration_with_valid_data</b><br>Test class: org.tests.qa.RegisterTest</td>
+<td></td>
+<td>1</td>
+<td>org.tests.qa.RegisterTest@679dd234</td></tr>
+<tr>
+<td title='org.tests.qa.ProductDetailsTest.ATC_018_Verify_product_details_page()'><b>ATC_018_Verify_product_details_page</b><br>Test class: org.tests.qa.ProductDetailsTest<br>Parameters: Blue and green Sneaker</td>
+<td></td>
+<td>2</td>
+<td>org.tests.qa.ProductDetailsTest@39941489</td></tr>
+<tr>
+<td title='org.tests.qa.ProductDetailsTest.ATC_018_Verify_product_details_page()'><b>ATC_018_Verify_product_details_page</b><br>Test class: org.tests.qa.ProductDetailsTest<br>Parameters: Computing and Internet</td>
+<td></td>
+<td>2</td>
+<td>org.tests.qa.ProductDetailsTest@39941489</td></tr>
+<tr>
+<td title='org.tests.qa.LoginTest.ATC_002_Verify_login_with_valid_credentials()'><b>ATC_002_Verify_login_with_valid_credentials</b><br>Test class: org.tests.qa.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>org.tests.qa.LoginTest@7e34b127</td></tr>
+<tr>
+<td title='org.tests.qa.CartTest.ATC_007_Update_cart_item_quantity()'><b>ATC_007_Update_cart_item_quantity</b><br>Test class: org.tests.qa.CartTest</td>
+<td></td>
+<td>4</td>
+<td>org.tests.qa.CartTest@1e5eb20a</td></tr>
+<tr>
+<td title='org.tests.qa.ProductDetailsTest.ATC_018_Verify_product_details_page()'><b>ATC_018_Verify_product_details_page</b><br>Test class: org.tests.qa.ProductDetailsTest<br>Parameters: 50's Rockabilly Polka Dot Top JR Plus Size</td>
+<td></td>
+<td>2</td>
+<td>org.tests.qa.ProductDetailsTest@39941489</td></tr>
+<tr>
+<td title='org.tests.qa.MyAccountTest.ATC_020_Verify_my_acc_page_navigation()'><b>ATC_020_Verify_my_acc_page_navigation</b><br>Test class: org.tests.qa.MyAccountTest</td>
+<td></td>
+<td>3</td>
+<td>org.tests.qa.MyAccountTest@4538856f</td></tr>
+<tr>
+<td title='org.tests.qa.SearchProductTest.ATC_017_Verify_product_search_with_invalid_keyword()'><b>ATC_017_Verify_product_search_with_invalid_keyword</b><br>Test class: org.tests.qa.SearchProductTest<br>Parameters: xyzabc</td>
+<td></td>
+<td>1</td>
+<td>org.tests.qa.SearchProductTest@60cb1ed6</td></tr>
+<tr>
+<td title='org.tests.qa.SearchProductTest.ATC_017_Verify_product_search_with_invalid_keyword()'><b>ATC_017_Verify_product_search_with_invalid_keyword</b><br>Test class: org.tests.qa.SearchProductTest<br>Parameters: marketplace</td>
+<td></td>
+<td>1</td>
+<td>org.tests.qa.SearchProductTest@60cb1ed6</td></tr>
+<tr>
+<td title='org.tests.qa.OrderTest.ATC_013_Verify_order_history()'><b>ATC_013_Verify_order_history</b><br>Test class: org.tests.qa.OrderTest</td>
+<td></td>
+<td>10</td>
+<td>org.tests.qa.OrderTest@789c3057</td></tr>
+<tr>
+<td title='org.tests.qa.LoginTest.ATC_016_Verify_logout_function()'><b>ATC_016_Verify_logout_function</b><br>Test class: org.tests.qa.LoginTest</td>
+<td></td>
+<td>2</td>
+<td>org.tests.qa.LoginTest@7e34b127</td></tr>
+<tr>
+<td title='org.tests.qa.SearchProductTest.ATC_004_Verify_product_with_valid_keyword()'><b>ATC_004_Verify_product_with_valid_keyword</b><br>Test class: org.tests.qa.SearchProductTest<br>Parameters: jeans</td>
+<td></td>
+<td>1</td>
+<td>org.tests.qa.SearchProductTest@60cb1ed6</td></tr>
+<tr>
+<td title='org.tests.qa.LoginTest.ATC_003_Verify_login_with_invalid_password()'><b>ATC_003_Verify_login_with_invalid_password</b><br>Test class: org.tests.qa.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>org.tests.qa.LoginTest@7e34b127</td></tr>
+<tr>
+<td title='org.tests.qa.CheckoutTest.ATC_010_Complete_full_checkout()'><b>ATC_010_Complete_full_checkout</b><br>Test class: org.tests.qa.CheckoutTest</td>
+<td></td>
+<td>12</td>
+<td>org.tests.qa.CheckoutTest@536b71b4</td></tr>
+<tr>
+<td title='org.tests.qa.ProductDetailsTest.ATC_018_Verify_product_details_page()'><b>ATC_018_Verify_product_details_page</b><br>Test class: org.tests.qa.ProductDetailsTest<br>Parameters: Denim Short with Rhinestones</td>
+<td></td>
+<td>2</td>
+<td>org.tests.qa.ProductDetailsTest@39941489</td></tr>
+<tr>
+<td title='org.tests.qa.CouponTest.ATC_012_Apply_invalid_coupon()'><b>ATC_012_Apply_invalid_coupon</b><br>Test class: org.tests.qa.CouponTest</td>
+<td></td>
+<td>4</td>
+<td>org.tests.qa.CouponTest@67332b1e</td></tr>
+<tr>
+<td title='org.tests.qa.CompareProductTest.ATC_019_Verify_compare_product_function()'><b>ATC_019_Verify_compare_product_function</b><br>Test class: org.tests.qa.CompareProductTest</td>
+<td></td>
+<td>13</td>
+<td>org.tests.qa.CompareProductTest@4c3de38e</td></tr>
+<tr>
+<td title='org.tests.qa.ProductDetailsTest.ATC_018_Verify_product_details_page()'><b>ATC_018_Verify_product_details_page</b><br>Test class: org.tests.qa.ProductDetailsTest<br>Parameters: 14.1-inch Laptop</td>
+<td></td>
+<td>2</td>
+<td>org.tests.qa.ProductDetailsTest@39941489</td></tr>
+<tr>
+<td title='org.tests.qa.ProductDetailsTest.ATC_018_Verify_product_details_page()'><b>ATC_018_Verify_product_details_page</b><br>Test class: org.tests.qa.ProductDetailsTest<br>Parameters: Blue Jeans</td>
+<td></td>
+<td>2</td>
+<td>org.tests.qa.ProductDetailsTest@39941489</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.tests.qa.CouponTest.ATC_011_Apply_valid_coupon()'><b>ATC_011_Apply_valid_coupon</b><br>Test class: org.tests.qa.CouponTest</td>
+<td><div><pre>org.testng.SkipException: Blocked : Valid coupon code is not available in Demo Web Shop application
+	at org.tests.qa.CouponTest.ATC_011_Apply_valid_coupon(CouponTest.java:81)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1933458457", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1933458457'><pre>org.testng.SkipException: Blocked : Valid coupon code is not available in Demo Web Shop application
+	at org.tests.qa.CouponTest.ATC_011_Apply_valid_coupon(CouponTest.java:81)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>org.tests.qa.CouponTest@67332b1e</td></tr>
+</table><p>
+</body>
+</html>

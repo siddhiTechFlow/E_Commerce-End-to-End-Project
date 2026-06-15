@@ -1,0 +1,1 @@
+[{"uid":"4d50c51cf29c0ce8","name":"ATC_013_Verify_order_history","time":{"start":1781468796720,"stop":1781468809495,"duration":12775},"status":"passed","severity":"normal"},{"uid":"2dfa1825e5728e40","name":"ATC_014_Verify_order_page_navigation","time":{"start":1781468815890,"stop":1781468819677,"duration":3787},"status":"passed","severity":"normal"}]
