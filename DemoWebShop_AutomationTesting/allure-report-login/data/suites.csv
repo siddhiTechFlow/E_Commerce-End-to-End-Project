@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Verify login with valid credentials and session creation ","2001","ATC_002_Verify_login_with_valid_credentials","Surefire suite","2026-06-13","passed","2026-06-13","org.tests.qa.LoginTest","Surefire test","org.tests.qa.LoginTest","ATC_002_Verify_login_with_valid_credentials"
+"Verify logout functionality after successful login  ","2962","ATC_016_Verify_logout_function","Surefire suite","2026-06-13","passed","2026-06-13","org.tests.qa.LoginTest","Surefire test","org.tests.qa.LoginTest","ATC_016_Verify_logout_function"
+"Verify login with invalid password shows error message","1399","ATC_003_Verify_login_with_invalid_password","Surefire suite","2026-06-13","passed","2026-06-13","org.tests.qa.LoginTest","Surefire test","org.tests.qa.LoginTest","ATC_003_Verify_login_with_invalid_password"

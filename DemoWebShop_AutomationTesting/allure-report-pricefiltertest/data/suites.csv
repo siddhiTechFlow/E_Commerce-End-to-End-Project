@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Verify products are sorted Low to High and High to Low","4375","ATC_005_Verify_prod_sort","Surefire suite","2026-06-15","passed","2026-06-15","org.tests.qa.PriceFilterTest","Surefire test","org.tests.qa.PriceFilterTest","ATC_005_Verify_prod_sort"
